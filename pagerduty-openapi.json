@@ -1,0 +1,1241 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "PagerDuty",
+        "description": "",
+        "termsOfService": ""
+    },
+    "servers": [
+        "https"
+    ],
+    "paths": {
+        "\/teams\/{teamId}\/people": {
+            "get": {
+                "summary": "Teams Resource",
+                "description": "List people and integrations associated with a given team.",
+                "operationId": "ListPeopleAndIntegrationsAssociatedWithAGivenTeam",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "teamId",
+                        "in": "path",
+                        "description": "Unique identifier for team"
+                    }
+                ]
+            }
+        },
+        "\/users\/{user_guid} ": {
+            " GET ": {
+                "summary": "Users {user_guid}",
+                "description": "Returns customer's user by user GUID.\t\t\t",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            " DELETE ": {
+                "summary": "Users {user_guid}",
+                "description": "DELETE users user gu",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/users ": {
+            " GET ": {
+                "summary": "Users",
+                "description": "Returns all customer's users.\t\t\t",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            " POST ": {
+                "summary": "Users",
+                "description": "Creates a new user.\t\t\t",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            " PUT ": {
+                "summary": "Users",
+                "description": "Updates a user.\t\t\t",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "List users",
+                "description": "List users of your PagerDuty account, optionally filtered by a search query.",
+                "operationId": "ListUsersOfYourPagerdutyAccountOptionallyFilteredByASearchQuery",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "query",
+                        "in": "query",
+                        "description": "Filters the results, showing only the escalation policies whose names contain the query."
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create a user",
+                "description": "Create a new user. Note that you must also supply a `password` property to create a user--it will not be returned by any API.",
+                "operationId": "CreateANewUserNoteThatYouMustAlsoSupplyAPasswordPropertyToCreateAUseritWillNotBe",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "user",
+                        "in": "body",
+                        "description": "The user to be created."
+                    }
+                ]
+            }
+        },
+        "\/api_reference": {
+            "get": {
+                "summary": "REST API Reference",
+                "description": "REST API Reference.",
+                "operationId": "RestApiReference",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/abilities": {
+            "get": {
+                "summary": "List abilities",
+                "description": "List all of your account's abilities, by name.",
+                "operationId": "ListAllOfYourAccountsAbilitiesByName",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/abilities\/{id}": {
+            "get": {
+                "summary": "Test an ability",
+                "description": "Test whether your account has a given ability.",
+                "operationId": "TestWhetherYourAccountHasAGivenAbility",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/addons": {
+            "get": {
+                "summary": "List installed add-ons",
+                "description": "List all of the add-ons installed on your account.",
+                "operationId": "ListAllOfTheAddonsInstalledOnYourAccount",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "service_ids[]",
+                        "in": "query",
+                        "description": "Filters the results, showing only add-ons for the given services"
+                    },
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "description": "Filters the results, showing only add-ons of the given type"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Install an add-on",
+                "description": "Install an add-on for your account.",
+                "operationId": "InstallAnAddonForYourAccount",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "addon",
+                        "in": "body",
+                        "description": "The add-on to be installed."
+                    }
+                ]
+            }
+        },
+        "\/addons\/{id}": {
+            "get": {
+                "summary": "Get an add-on",
+                "description": "Get details about an existing add-on.",
+                "operationId": "GetDetailsAboutAnExistingAddon",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "delete": {
+                "summary": "Delete an add-on",
+                "description": "Remove an existing add-on.",
+                "operationId": "RemoveAnExistingAddon",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "put": {
+                "summary": "Update an add-on",
+                "description": "Update an existing add-on.",
+                "operationId": "UpdateAnExistingAddon",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "addon",
+                        "in": "body",
+                        "description": "The add-on to be installed."
+                    }
+                ]
+            }
+        },
+        "\/escalation_policies": {
+            "get": {
+                "summary": "List escalation policies",
+                "description": "List all of the existing escalation policies.",
+                "operationId": "ListAllOfTheExistingEscalationPolicies",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "query",
+                        "in": "query",
+                        "description": "Filters the results, showing only the escalation policies whose names contain the query."
+                    },
+                    {
+                        "name": "user_ids[]",
+                        "in": "query",
+                        "description": "Filters the results, showing only escalation policies on which any of the users is a target."
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create an escalation policy",
+                "description": "Creates a new escalation policy. There must be at least one existing escalation rule added to create a new escalation policy.",
+                "operationId": "CreatesANewEscalationPolicyThereMustBeAtLeastOneExistingEscalationRuleAddedToCreate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "escalation_policy",
+                        "in": "body",
+                        "description": "The escalation policy to be created."
+                    }
+                ]
+            }
+        },
+        "\/escalation_policies\/{id}": {
+            "get": {
+                "summary": "Get an escalation policy",
+                "description": "Get information about an existing escalation policy and its rules.",
+                "operationId": "GetInformationAboutAnExistingEscalationPolicyAndItsRules",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "delete": {
+                "summary": "Delete an escalation policy",
+                "description": "Deletes an existing escalation policy and rules. The escalation policy must not be in use by any services.",
+                "operationId": "DeletesAnExistingEscalationPolicyAndRulesTheEscalationPolicyMustNotBeInUseByAnyServ",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "put": {
+                "summary": "Update an escalation policy",
+                "description": "Updates an existing escalation policy and rules.",
+                "operationId": "UpdatesAnExistingEscalationPolicyAndRules",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "escalation_policy",
+                        "in": "body",
+                        "description": "The escalation policy to be created."
+                    }
+                ]
+            }
+        },
+        "\/incidents": {
+            "get": {
+                "summary": "List incidents",
+                "description": "List existing incidents.",
+                "operationId": "ListExistingIncidents",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "statuses[]",
+                        "in": "query",
+                        "description": "Return only incidents with the given statuses. (More status codes may be introduced in the future.)"
+                    },
+                    {
+                        "name": "sort_by",
+                        "in": "query",
+                        "description": "Used to specify both the field you wish to sort the results on (incident_number\/created_on\/resolved_on\/urgency), as well as the direction (asc\/desc) of the results. The sort_by field and direction should be separated by a colon. A maximum of two fields can be included, separated by a comma. Sort direction defaults to ascending. The account must have the `urgencies` ability to sort by the urgency."
+                    },
+                    {
+                        "name": "include[]",
+                        "in": "query",
+                        "description": "Array of additional details to include."
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Manage incidents",
+                "description": "Acknowledge, resolve, escalate or reassign one or more incidents.",
+                "operationId": "AcknowledgeResolveEscalateOrReassignOneOrMoreIncidents",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/incidents\/{id}": {
+            "get": {
+                "summary": "Get an incident",
+                "description": "Show detailed information about an incident. Accepts either an incident id, or an incident number.",
+                "operationId": "ShowDetailedInformationAboutAnIncidentAcceptsEitherAnIncidentIdOrAnIncidentNumber",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Either the id or number of the incident to retrieve."
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update an incident",
+                "description": "Acknowledge, resolve, escalate or reassign an incident.",
+                "operationId": "AcknowledgeResolveEscalateOrReassignAnIncident",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Either the id or number of the incident to retrieve."
+                    },
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/incidents\/{id}\/log_entries": {
+            "get": {
+                "summary": "List log entries for the incident",
+                "description": "List log entries for the specified incident.",
+                "operationId": "ListLogEntriesForTheSpecifiedIncident",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/incidents\/{id}\/notes": {
+            "get": {
+                "summary": "List existing notes for the specified incident",
+                "description": "List existing notes for the specified incident.",
+                "operationId": "ListExistingNotesForTheSpecifiedIncident",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Create a new note for the specified incident",
+                "description": "Create a new note for the specified incident.",
+                "operationId": "CreateANewNoteForTheSpecifiedIncident",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/incidents\/{id}\/snooze": {
+            "post": {
+                "summary": "Snooze an incident",
+                "description": "Post incents  snooze",
+                "operationId": "SnoozeAnIncident",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/log_entries": {
+            "get": {
+                "summary": "List log entries",
+                "description": "List all of the incident log entries across the entire account.",
+                "operationId": "ListAllOfTheIncidentLogEntriesAcrossTheEntireAccount",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/log_entries\/{id}": {
+            "get": {
+                "summary": "Get a log entry",
+                "description": "Get details for a specific incident log entry. This method provides additional information you can use to get at raw event data.",
+                "operationId": "GetDetailsForASpecificIncidentLogEntryThisMethodProvidesAdditionalInformationYouCanUs",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/maintenance_windows": {
+            "get": {
+                "summary": "List maintenance windows",
+                "description": "List existing maintenance windows, optionally filtered by service and\/or team, or whether they are from the past, present or future.",
+                "operationId": "ListExistingMaintenanceWindowsOptionallyFilteredByServiceAndorTeamOrWhetherTheyAreFrom",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "description": "Filters the results, showing only add-ons of the given type"
+                    },
+                    {
+                        "name": "query",
+                        "in": "query",
+                        "description": "Filters the results, showing only the escalation policies whose names contain the query."
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create a maintenance window",
+                "description": "Create a new maintenance window for the specified services. No new incidents will be created for a service that is in maintenance.",
+                "operationId": "CreateANewMaintenanceWindowForTheSpecifiedServicesNoNewIncidentsWillBeCreatedForASe",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "maintenance_window",
+                        "in": "body",
+                        "description": "The maintenance window object."
+                    }
+                ]
+            }
+        },
+        "\/maintenance_windows\/{id}": {
+            "get": {
+                "summary": "Get a maintenance window",
+                "description": "Get an existing maintenance window.",
+                "operationId": "GetAnExistingMaintenanceWindow",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "delete": {
+                "summary": "Delete or end a maintenance window",
+                "description": "Delete an existing maintenance window if it's in the future, or end it if it's currently on-going. If the maintenance window has already ended it cannot be deleted.",
+                "operationId": "DeleteAnExistingMaintenanceWindowIfItsInTheFutureOrEndItIfItsCurrentlyOngoingIfThe",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "put": {
+                "summary": "Update a maintenance window",
+                "description": "Update an existing maintenance window.",
+                "operationId": "UpdateAnExistingMaintenanceWindow",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "maintenance_window",
+                        "in": "body",
+                        "description": "The maintenance window object."
+                    }
+                ]
+            }
+        },
+        "\/notifications": {
+            "get": {
+                "summary": "List notifications",
+                "description": "List notifications for a given time range, optionally filtered by type (sms_notification, email_notification, phone_notification, or push_notification).",
+                "operationId": "ListNotificationsForAGivenTimeRangeOptionallyFilteredByTypeSmsNotificationEmailNotific",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "since",
+                        "in": "query",
+                        "description": "The start of the date range over which you want to search. The time element is optional."
+                    },
+                    {
+                        "name": "until",
+                        "in": "query",
+                        "description": "The end of the date range over which you want to search. This should be in the same format as since. The size of the date range must be less than 3 months."
+                    },
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "description": "Filters the results, showing only add-ons of the given type"
+                    },
+                    {
+                        "name": "include[]",
+                        "in": "query",
+                        "description": "Array of additional details to include."
+                    }
+                ]
+            }
+        },
+        "\/oncalls": {
+            "get": {
+                "summary": "List all of the on-calls",
+                "description": "List the on-call entries during a given time range.",
+                "operationId": "ListTheOncallEntriesDuringAGivenTimeRange",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "include[]",
+                        "in": "query",
+                        "description": "Array of additional details to include."
+                    },
+                    {
+                        "name": "user_ids[]",
+                        "in": "query",
+                        "description": "Filters the results, showing only escalation policies on which any of the users is a target."
+                    },
+                    {
+                        "name": "escalation_policy_ids[]",
+                        "in": "query",
+                        "description": "Filters the results, showing only on-calls for the specified escalation policy IDs."
+                    },
+                    {
+                        "name": "schedule_ids[]",
+                        "in": "query",
+                        "description": "Filters the results, showing only on-calls for the specified schedule IDs. If `null` is provided in the array, it includes permanent on-calls due to direct user escalation targets."
+                    },
+                    {
+                        "name": "since",
+                        "in": "query",
+                        "description": "The start of the date range over which you want to search. The time element is optional."
+                    },
+                    {
+                        "name": "until",
+                        "in": "query",
+                        "description": "The end of the date range over which you want to search. This should be in the same format as since. The size of the date range must be less than 3 months."
+                    },
+                    {
+                        "name": "earliest",
+                        "in": "query",
+                        "description": "This will filter on-calls such that only the earliest on-call for each combination of escalation policy, escalation level, and user is returned. This is useful for determining when the \"next\" on-calls are for a given set of filters."
+                    }
+                ]
+            }
+        },
+        "\/services": {
+            "get": {
+                "summary": "List services",
+                "description": "List existing services.",
+                "operationId": "ListExistingServices",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "query",
+                        "in": "query",
+                        "description": "Filters the results, showing only the escalation policies whose names contain the query."
+                    },
+                    {
+                        "name": "include[]",
+                        "in": "query",
+                        "description": "Array of additional details to include."
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create a service",
+                "description": "Create a new service.",
+                "operationId": "CreateANewService",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "service",
+                        "in": "body",
+                        "description": "The service to be created"
+                    }
+                ]
+            }
+        },
+        "\/services\/{id}": {
+            "get": {
+                "summary": "Get a service",
+                "description": "Get details about an existing service.",
+                "operationId": "GetDetailsAboutAnExistingService",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "include[]",
+                        "in": "query",
+                        "description": "Array of additional details to include."
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete a service",
+                "description": "Delete an existing service. Once the service is deleted, it will not be accessible from the web UI and new incidents won't be able to be created for this service.",
+                "operationId": "DeleteAnExistingServiceOnceTheServiceIsDeletedItWillNotBeAccessibleFromTheWebUiAnd",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "put": {
+                "summary": "Update a service",
+                "description": "Update an existing service.",
+                "operationId": "UpdateAnExistingService",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "service",
+                        "in": "body",
+                        "description": "The service to be created"
+                    }
+                ]
+            }
+        },
+        "\/services\/{id}\/integrations": {
+            "post": {
+                "summary": "Create a new integration",
+                "description": "Create a new integration belonging to a service.",
+                "operationId": "CreateANewIntegrationBelongingToAService",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "integration",
+                        "in": "body",
+                        "description": "The integration to be created"
+                    }
+                ]
+            }
+        },
+        "\/services\/{id}\/integrations\/{integration_id}": {
+            "put": {
+                "summary": "Update an existing integration",
+                "description": "Update an integration belonging to a service.",
+                "operationId": "UpdateAnIntegrationBelongingToAService",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "integration",
+                        "in": "body",
+                        "description": "The integration to be created"
+                    }
+                ]
+            },
+            "get": {
+                "summary": "View an integration",
+                "description": "Get details about an integration belonging to a service.",
+                "operationId": "GetDetailsAboutAnIntegrationBelongingToAService",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "include[]",
+                        "in": "query",
+                        "description": "Array of additional details to include."
+                    }
+                ]
+            }
+        },
+        "\/teams": {
+            "post": {
+                "summary": "Create a team",
+                "description": "Create a new team.",
+                "operationId": "CreateANewTeam",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "team",
+                        "in": "body",
+                        "description": "The team to be created."
+                    }
+                ]
+            },
+            "get": {
+                "summary": "List teams",
+                "description": "List teams of your PagerDuty account, optionally filtered by a search query.",
+                "operationId": "ListTeamsOfYourPagerdutyAccountOptionallyFilteredByASearchQuery",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "query",
+                        "in": "query",
+                        "description": "Filters the results, showing only the escalation policies whose names contain the query."
+                    }
+                ]
+            }
+        },
+        "\/teams\/{id}": {
+            "get": {
+                "summary": "Get a team",
+                "description": "Get details about an existing team.",
+                "operationId": "GetDetailsAboutAnExistingTeam",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "delete": {
+                "summary": "Delete a team",
+                "description": "Remove an existing team.",
+                "operationId": "RemoveAnExistingTeam",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "put": {
+                "summary": "Update a team",
+                "description": "Update an existing team.",
+                "operationId": "UpdateAnExistingTeam",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "team",
+                        "in": "body",
+                        "description": "The team to be created."
+                    }
+                ]
+            }
+        },
+        "\/teams\/{id}\/escalation_policies\/{escalation_policy_id}": {
+            "delete": {
+                "summary": "Remove an escalation policy from a team",
+                "description": "Delete teams  escalation policies escalation policy",
+                "operationId": "RemoveAnEscalationPolicyFromATeam",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "put": {
+                "summary": "Add an escalation policy to a team",
+                "description": "Put teams  escalation policies escalation policy",
+                "operationId": "AddAnEscalationPolicyToATeam",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/teams\/{id}\/users\/{user_id}": {
+            "delete": {
+                "summary": "Remove a user from a team",
+                "description": "Remove a user from a team.",
+                "operationId": "RemoveAUserFromATeam",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "put": {
+                "summary": "Add a user to a team",
+                "description": "Add a user to a team.",
+                "operationId": "AddAUserToATeam",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/users\/{id}": {
+            "get": {
+                "summary": "Get a user",
+                "description": "Get details about an existing user.",
+                "operationId": "GetDetailsAboutAnExistingUser",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "delete": {
+                "summary": "Delete a user",
+                "description": "Remove an existing user.",
+                "operationId": "RemoveAnExistingUser",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "put": {
+                "summary": "Update a user",
+                "description": "Update an existing user. Note that you may also supply a `password` property--it will not be returned by any API.",
+                "operationId": "UpdateAnExistingUserNoteThatYouMayAlsoSupplyAPasswordPropertyitWillNotBeReturnedBy",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "user",
+                        "in": "body",
+                        "description": "The user to be created."
+                    }
+                ]
+            }
+        },
+        "\/users\/{id}\/contact_methods": {
+            "get": {
+                "summary": "List a user's contact methods",
+                "description": "List contact methods of your PagerDuty user.",
+                "operationId": "ListContactMethodsOfYourPagerdutyUser",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Create a user contact method",
+                "description": "Create a new contact method.",
+                "operationId": "CreateANewContactMethod",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "contact_method",
+                        "in": "body",
+                        "description": "The contact method to be created."
+                    }
+                ]
+            }
+        },
+        "\/users\/{id}\/contact_methods\/{contact_method_id}": {
+            "get": {
+                "summary": "Get a user's contact method",
+                "description": "Get details about a user's contact method.",
+                "operationId": "GetDetailsAboutAUsersContactMethod",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "delete": {
+                "summary": "Delete a user's contact method",
+                "description": "Delete users  contact methods contact method",
+                "operationId": "RemoveAUsersContactMethod",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "put": {
+                "summary": "Update a user's contact method",
+                "description": "Put users  contact methods contact method",
+                "operationId": "UpdateAUsersContactMethod",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "user",
+                        "in": "body",
+                        "description": "The user to be created."
+                    }
+                ]
+            }
+        },
+        "\/users\/{id}\/notification_rules": {
+            "get": {
+                "summary": "List a user's notification rules",
+                "description": "List notification rules of your PagerDuty user.",
+                "operationId": "ListNotificationRulesOfYourPagerdutyUser",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "include[]",
+                        "in": "query",
+                        "description": "Array of additional details to include."
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create a user notification rule",
+                "description": "Create a new notification rule.",
+                "operationId": "CreateANewNotificationRule",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "notification_rule",
+                        "in": "body",
+                        "description": "The notification rule to be created."
+                    }
+                ]
+            }
+        },
+        "\/users\/{id}\/notification_rules\/{notification_rule_id}": {
+            "get": {
+                "summary": "Get a user's notification rule",
+                "description": "Get users  notification rules notification rule",
+                "operationId": "GetDetailsAboutAUsersNotificationRule",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "include[]",
+                        "in": "query",
+                        "description": "Array of additional details to include."
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete a user's notification rule",
+                "description": "Delete users  notification rules notification rule",
+                "operationId": "RemoveAUsersNotificationRule",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "put": {
+                "summary": "Update a user's notification rule",
+                "description": "Put users  notification rules notification rule",
+                "operationId": "UpdateAUsersNotificationRule",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "notification_rule",
+                        "in": "body",
+                        "description": "The notification rule to be created."
+                    }
+                ]
+            }
+        },
+        "\/vendors": {
+            "get": {
+                "summary": "List vendors",
+                "description": "List all vendors.",
+                "operationId": "ListAllVendors",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/vendors\/{id}": {
+            "get": {
+                "summary": "Get a vendor",
+                "description": "Get details about one specific vendor.",
+                "operationId": "GetDetailsAboutOneSpecificVendor",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/inventory\/services": {
+            "": {
+                "summary": "Creating a service",
+                "description": " inventory services",
+                "operationId": "CreatingAService",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "token",
+                        "in": "body",
+                        "description": "Your API token."
+                    },
+                    {
+                        "name": "name",
+                        "in": "body",
+                        "description": "The display name for the service."
+                    },
+                    {
+                        "name": "checkType",
+                        "in": "body",
+                        "description": "The type of check: either http or tcp"
+                    },
+                    {
+                        "name": "timeout",
+                        "in": "body",
+                        "description": "How many seconds to wait until timing out. Max 30."
+                    },
+                    {
+                        "name": "checkUrl",
+                        "in": "body",
+                        "description": "HTTP Check - The URL to issue the request to."
+                    },
+                    {
+                        "name": "checkLocations",
+                        "in": "body",
+                        "description": "A JSON list of locations to check from e.g. [&quot;lon&quot;, &quot;dub&quot;]. Each location has its own ???API ID??? which is noted on the locations list. Location ID&#39;s can be found on our support site"
+                    },
+                    {
+                        "name": "checkMethod",
+                        "in": "body",
+                        "description": "HTTP Check - The HTTP method used to issue the check: either GET, POST, PUT or DELETE. Required for HTTP check, irrelevant for TCP."
+                    },
+                    {
+                        "name": "slowThreshold",
+                        "in": "body",
+                        "description": "HTTP Check - Request time millisecond threshold after which service is deemed slow."
+                    },
+                    {
+                        "name": "group",
+                        "in": "body",
+                        "description": "The group the service belongs to. If this is empty it???s set to null."
+                    },
+                    {
+                        "name": "auth",
+                        "in": "body",
+                        "description": "Basic HTTP auth username and password. e.g. {&quot;username&quot;:&quot;Thomas&quot;, &quot;password&quot;:&quot;password&quot;}"
+                    },
+                    {
+                        "name": "headers",
+                        "in": "body",
+                        "description": "HTTP Check - headers to include e.g. {&quot;User-Agent&quot;: &quot;Thomas the Tank Engine&quot;}"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "HTTP Check - Content of the HTTP requestbody"
+                    },
+                    {
+                        "name": "validateCert",
+                        "in": "body",
+                        "description": "HTTP Check - Whether to validate the SSL certificate or not"
+                    },
+                    {
+                        "name": "host",
+                        "in": "body",
+                        "description": "TCP Check - The hostname or IP address to issue the TCP check to"
+                    },
+                    {
+                        "name": "port",
+                        "in": "body",
+                        "description": "TCP Check - The port number to issue the TCP check to"
+                    },
+                    {
+                        "name": "data",
+                        "in": "body",
+                        "description": "TCP Check - The content to send when opening the TCP socket"
+                    },
+                    {
+                        "name": "tags",
+                        "in": "body",
+                        "description": "A JSON list of tag IDs."
+                    },
+                    {
+                        "name": "token",
+                        "in": "query",
+                        "description": "Your API token."
+                    }
+                ]
+            }
+        },
+        "\/inventory\/services\/serviceId": {
+            "": {
+                "summary": "Updating a service",
+                "description": " inventory services service",
+                "operationId": "UpdatingAService",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "serviceId",
+                        "in": "path",
+                        "description": "The ID of your service."
+                    },
+                    {
+                        "name": "token",
+                        "in": "path",
+                        "description": "Your API token."
+                    },
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "The display name for the service."
+                    },
+                    {
+                        "name": "checkType",
+                        "in": "path",
+                        "description": "The type of check: either http or tcp"
+                    },
+                    {
+                        "name": "timeout",
+                        "in": "path",
+                        "description": "How many seconds to wait until timing out. Max 30."
+                    },
+                    {
+                        "name": "checkLocations",
+                        "in": "path",
+                        "description": "A JSON list of locations to check from e.g. [&quot;lon&quot;, &quot;dub&quot;]. Each location has its own &quot;API ID&quot; which is noted on the locations list."
+                    },
+                    {
+                        "name": "group",
+                        "in": "path",
+                        "description": "The group the service belongs to."
+                    },
+                    {
+                        "name": "checkUrl",
+                        "in": "path",
+                        "description": "HTTP Check - The URL to issue the request to."
+                    },
+                    {
+                        "name": "checkMethod",
+                        "in": "path",
+                        "description": "HTTP Check - The HTTP method used to issue the check: either GET or POST."
+                    },
+                    {
+                        "name": "slowThreshold",
+                        "in": "path",
+                        "description": "HTTP Check - Request time millisecond threshold after which service is deemed slow."
+                    },
+                    {
+                        "name": "body",
+                        "in": "path",
+                        "description": "HTTP Check - Content of the HTTP request body"
+                    },
+                    {
+                        "name": "host",
+                        "in": "path",
+                        "description": "TCP Check - The hostname or IP address to issue the TCP check to"
+                    },
+                    {
+                        "name": "port",
+                        "in": "path",
+                        "description": "TCP Check - The port number to issue the TCP check to"
+                    },
+                    {
+                        "name": "data",
+                        "in": "path",
+                        "description": "TCP Check - The content to send when opening the TCP socket"
+                    },
+                    {
+                        "name": "validateCert",
+                        "in": "path",
+                        "description": "Whether to validate the SSL certificate or not"
+                    },
+                    {
+                        "name": "auth",
+                        "in": "path",
+                        "description": "Basic HTTP auth username and password. e.g. {&quot;username&quot;:&quot;Thomas&quot;, &quot;password&quot;:&quot;password&quot;}"
+                    },
+                    {
+                        "name": "headers",
+                        "in": "path",
+                        "description": "HTTP headers to include e.g. {&quot;User-Agent&quot;: &quot;Thomas the Tank Engine&quot;}"
+                    },
+                    {
+                        "name": "tags",
+                        "in": "path",
+                        "description": "A JSON list of tag IDs."
+                    },
+                    {
+                        "name": "token",
+                        "in": "body",
+                        "description": "Your API token."
+                    },
+                    {
+                        "name": "name",
+                        "in": "body",
+                        "description": "The display name for the service."
+                    },
+                    {
+                        "name": "checkType",
+                        "in": "body",
+                        "description": "The type of check: either http or tcp"
+                    },
+                    {
+                        "name": "timeout",
+                        "in": "body",
+                        "description": "How many seconds to wait until timing out. Max 30."
+                    },
+                    {
+                        "name": "checkLocations",
+                        "in": "body",
+                        "description": "A JSON list of locations to check from e.g. [&quot;lon&quot;, &quot;dub&quot;]. Each location has its own ???API ID??? which is noted on the locations list. Location ID&#39;s can be found on our support site"
+                    },
+                    {
+                        "name": "group",
+                        "in": "body",
+                        "description": "The group the service belongs to. If this is empty it???s set to null."
+                    },
+                    {
+                        "name": "checkUrl",
+                        "in": "body",
+                        "description": "HTTP Check - The URL to issue the request to."
+                    },
+                    {
+                        "name": "checkMethod",
+                        "in": "body",
+                        "description": "HTTP Check - The HTTP method used to issue the check: either GET, POST, PUT or DELETE. Required for HTTP check, irrelevant for TCP."
+                    },
+                    {
+                        "name": "slowThreshold",
+                        "in": "body",
+                        "description": "HTTP Check - Request time millisecond threshold after which service is deemed slow."
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "HTTP Check - Content of the HTTP requestbody"
+                    },
+                    {
+                        "name": "host",
+                        "in": "body",
+                        "description": "TCP Check - The hostname or IP address to issue the TCP check to"
+                    },
+                    {
+                        "name": "port",
+                        "in": "body",
+                        "description": "TCP Check - The port number to issue the TCP check to"
+                    },
+                    {
+                        "name": "data",
+                        "in": "body",
+                        "description": "TCP Check - The content to send when opening the TCP socket"
+                    },
+                    {
+                        "name": "validateCert",
+                        "in": "body",
+                        "description": "HTTP Check - Whether to validate the SSL certificate or not"
+                    },
+                    {
+                        "name": "auth",
+                        "in": "body",
+                        "description": "Basic HTTP auth username and password. e.g. {&quot;username&quot;:&quot;Thomas&quot;, &quot;password&quot;:&quot;password&quot;}"
+                    },
+                    {
+                        "name": "headers",
+                        "in": "body",
+                        "description": "HTTP Check - headers to include e.g. {&quot;User-Agent&quot;: &quot;Thomas the Tank Engine&quot;}"
+                    },
+                    {
+                        "name": "tags",
+                        "in": "body",
+                        "description": "A JSON list of tag IDs."
+                    }
+                ]
+            }
+        },
+        "\/inventory\/services\/groups\/?token=token": {
+            "": {
+                "summary": "Listing service groups",
+                "description": " inventory services groups token token",
+                "operationId": "ListingServiceGroups",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "token",
+                        "in": "path",
+                        "description": "Your API token."
+                    }
+                ]
+            }
+        },
+        "\/notifications\/recipients": {
+            "GET": {
+                "summary": "Creating a recipient",
+                "description": "Create recipients for your alert notifications\n",
+                "operationId": "CreatingARecipient",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "token",
+                        "in": "body",
+                        "description": "Your API token."
+                    },
+                    {
+                        "name": "name",
+                        "in": "body",
+                        "description": "The display name for the service."
+                    },
+                    {
+                        "name": "type",
+                        "in": "body",
+                        "description": "The type of notification integration"
+                    },
+                    {
+                        "name": "channel",
+                        "in": "body",
+                        "description": "Channel name for chat integrations"
+                    },
+                    {
+                        "name": "url",
+                        "in": "body",
+                        "description": "URL for webhook integrations"
+                    }
+                ]
+            }
+        },
+        "\/users\/users\/userId": {
+            "": {
+                "summary": "Deleting a user",
+                "description": " users users user",
+                "operationId": "DeletingAUser",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "userId",
+                        "in": "path",
+                        "description": "The ID of the user to delete"
+                    },
+                    {
+                        "name": "token",
+                        "in": "path",
+                        "description": "Your API token."
+                    },
+                    {
+                        "name": "token",
+                        "in": "body",
+                        "description": "Your API token."
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": []
+    }
+}
