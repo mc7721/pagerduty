@@ -1,0 +1,3313 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "2.0",
+        "title": "PagerDuty API",
+        "description": "The PagerDuty API provides programmatic access to entities within a PagerDuty account. It is designed around [RESTful principles](https:\/\/en.wikipedia.org\/wiki\/Representational_state_transfer) with a path structure based on resources and their relationships.\n\nAll requests and responses are serialized in [JSON](https:\/\/en.wikipedia.org\/wiki\/JSON), including error responses.\n\nSchema are designed to be reusable across requests and across endpoints.\n\nMore sophisticated API clients should treat PagerDuty resources as unique objects keyed by the `id` field that can be used in any API request involving resources of that type.\n\nEvery resource contains a `type` field that identifies the schema it uses.\n\n## Rate limiting\n\nEach account and authentication mechanism is limited to the number of API requests it can make every minute. API requests that exceed the API rate limit will return an [HTTP status code](error_codes.html#http_responses) of 429. Different requests may affect your rate limit diff",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "http:\/\/api.pagerduty.com\/"
+    ],
+    "paths": {
+        "\/api_reference": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "REST API Reference",
+                "description": "REST API Reference.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/abilities": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "List abilities",
+                "description": "List all of your account's abilities, by name.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/abilities\/{id}": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "Test an ability",
+                "description": "Test whether your account has a given ability.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "The account has the requested ability."
+                    }
+                }
+            }
+        },
+        "\/addons": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "List installed add-ons",
+                "description": "List all of the add-ons installed on your account.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "service_ids[]",
+                        "in": "query",
+                        "description": "Filters the results, showing only add-ons for the given services"
+                    },
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "description": "Filters the results, showing only add-ons of the given type"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "post": {
+                "summary": "Install an add-on",
+                "description": "Install an add-on for your account.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "201": {
+                        "description": "The add-on that was installed."
+                    }
+                }
+            }
+        },
+        "\/addons\/{id}": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "Get an add-on",
+                "description": "Get details about an existing add-on.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Delete an add-on",
+                "description": "Remove an existing add-on.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "The account has the requested ability."
+                    }
+                }
+            },
+            "put": {
+                "summary": "Update an add-on",
+                "description": "Update an existing add-on.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/escalation_policies": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "List escalation policies",
+                "description": "List all of the existing escalation policies.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "query",
+                        "in": "query",
+                        "description": "Filters the results, showing only the escalation policies whose names contain the query."
+                    },
+                    {
+                        "name": "user_ids[]",
+                        "in": "query",
+                        "description": "Filters the results, showing only escalation policies on which any of the users is a target."
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "post": {
+                "summary": "Create an escalation policy",
+                "description": "Creates a new escalation policy. There must be at least one existing escalation rule added to create a new escalation policy.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "The add-on that was installed."
+                    }
+                }
+            }
+        },
+        "\/escalation_policies\/{id}": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "Get an escalation policy",
+                "description": "Get information about an existing escalation policy and its rules.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Delete an escalation policy",
+                "description": "Deletes an existing escalation policy and rules. The escalation policy must not be in use by any services.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "The account has the requested ability."
+                    }
+                }
+            },
+            "put": {
+                "summary": "Update an escalation policy",
+                "description": "Updates an existing escalation policy and rules.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/escalation_policies\/{id}\/escalation_rules": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/escalation_policies\/{id}\/escalation_rules\/{escalation_rule_id}": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/extension_schemas": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "List extension schemas",
+                "description": "List all extension schemas.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/extension_schemas\/{id}": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "Get an extension vendor",
+                "description": "Get details about one specific extension vendor.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/extensions": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "List extensions",
+                "description": "List existing extensions.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "extension_object_id",
+                        "in": "query",
+                        "description": "The id of the extension object you want to filter by."
+                    },
+                    {
+                        "name": "query",
+                        "in": "query",
+                        "description": "Filters the results, showing only the escalation policies whose names contain the query."
+                    },
+                    {
+                        "name": "extension_schema_id",
+                        "in": "query",
+                        "description": "Filter the extensions by extension vendor id."
+                    },
+                    {
+                        "name": "include[]",
+                        "in": "query",
+                        "description": "Array of additional details to include."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "post": {
+                "summary": "Create an extension",
+                "description": "Create a new extension.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "201": {
+                        "description": "The add-on that was installed."
+                    }
+                }
+            }
+        },
+        "\/extensions\/{id}": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "Get an extension",
+                "description": "Get details about an existing extension.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "include[]",
+                        "in": "query",
+                        "description": "Array of additional details to include."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Delete an extension",
+                "description": "Delete an existing extension. Once the extension is deleted, it will not be accessible from the web UI and new incidents won't be able to be created for this extension.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "The account has the requested ability."
+                    }
+                }
+            },
+            "put": {
+                "summary": "Update an extension",
+                "description": "Update an existing extension.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/incidents": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "List incidents",
+                "description": "List existing incidents.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "statuses[]",
+                        "in": "query",
+                        "description": "Return only incidents with the given statuses. (More status codes may be introduced in the future.)"
+                    },
+                    {
+                        "name": "sort_by",
+                        "in": "query",
+                        "description": "Used to specify both the field you wish to sort the results on (incident_number\/created_at\/resolved_at\/urgency), as well as the direction (asc\/desc) of the results. The sort_by field and direction should be separated by a colon. A maximum of two fields can be included, separated by a comma. Sort direction defaults to ascending. The account must have the `urgencies` ability to sort by the urgency."
+                    },
+                    {
+                        "name": "include[]",
+                        "in": "query",
+                        "description": "Array of additional details to include."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "put": {
+                "summary": "Manage incidents",
+                "description": "Acknowledge, resolve, escalate or reassign one or more incidents.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "post": {
+                "summary": "Create an Incident",
+                "description": "Create an incident synchronously without a corresponding event from a monitoring service.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "The add-on that was installed."
+                    }
+                }
+            }
+        },
+        "\/priorities": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "List priorities",
+                "description": "List existing priorities, in order (most to least severe).",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/response_plays\/{response_play_id}\/run": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Run a response play",
+                "description": "Run a specified response play on a given incident.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/incidents\/count": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/incidents\/{id}\/merge": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "put": {
+                "summary": "Merge incidents",
+                "description": "Merge a list of source incidents into this incident.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/incidents\/{id}": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "Get an incident",
+                "description": "Show detailed information about an incident. Accepts either an incident id, or an incident number.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Either the id or number of the incident to retrieve."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "put": {
+                "summary": "Update an incident",
+                "description": "Acknowledge, resolve, escalate or reassign an incident.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Either the id or number of the incident to retrieve."
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/incidents\/{id}\/alerts": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "List alerts for an incident",
+                "description": "List alerts for the specified incident.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "statuses[]",
+                        "in": "query",
+                        "description": "Return only incidents with the given statuses. (More status codes may be introduced in the future.)"
+                    },
+                    {
+                        "name": "sort_by",
+                        "in": "query",
+                        "description": "Used to specify both the field you wish to sort the results on (incident_number\/created_at\/resolved_at\/urgency), as well as the direction (asc\/desc) of the results. The sort_by field and direction should be separated by a colon. A maximum of two fields can be included, separated by a comma. Sort direction defaults to ascending. The account must have the `urgencies` ability to sort by the urgency."
+                    },
+                    {
+                        "name": "include[]",
+                        "in": "query",
+                        "description": "Array of additional details to include."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "put": {
+                "summary": "Manage alerts",
+                "description": "Resolve multiple alerts or associate them with different incidents.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/incidents\/{id}\/alerts\/{alert_id}\/": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "Get an alert",
+                "description": "Show detailed information about an alert. Accepts an alert id.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "alert_id",
+                        "in": "path",
+                        "description": "The id of the alert to retrieve."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "put": {
+                "summary": "Update an alert",
+                "description": "Resolve an alert or associate an alert with a new parent incident.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "alert_id",
+                        "in": "path",
+                        "description": "The id of the alert to retrieve."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/incidents\/{id}\/log_entries": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "List log entries for an incident",
+                "description": "List log entries for the specified incident.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/incidents\/{id}\/grouped_log_entries": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/incidents\/{id}\/notes": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "List notes for an incident",
+                "description": "List existing notes for the specified incident.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "post": {
+                "summary": "Create a note on an incident",
+                "description": "Create a new note for the specified incident.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/incidents\/{id}\/status_updates": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Create a status update on an incident",
+                "description": "Create a new status update for the specified incident.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/incidents\/{id}\/responder_requests": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Create a responder request for an incident",
+                "description": "Send a new responder request for the specified incident.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/incidents\/{id}\/snooze": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Snooze an incident",
+                "description": "Snooze an incident.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "The add-on that was installed."
+                    }
+                }
+            }
+        },
+        "\/log_entries": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "List log entries",
+                "description": "List all of the incident log entries across the entire account.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/log_entries\/{id}": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "Get a log entry",
+                "description": "Get details for a specific incident log entry. This method provides additional information you can use to get at raw event data.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/maintenance_windows": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "List maintenance windows",
+                "description": "List existing maintenance windows, optionally filtered by service and\/or team, or whether they are from the past, present or future.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "description": "Filters the results, showing only add-ons of the given type"
+                    },
+                    {
+                        "name": "query",
+                        "in": "query",
+                        "description": "Filters the results, showing only the escalation policies whose names contain the query."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "post": {
+                "summary": "Create a maintenance window",
+                "description": "Create a new maintenance window for the specified services. No new incidents will be created for a service that is in maintenance.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "The add-on that was installed."
+                    }
+                }
+            }
+        },
+        "\/maintenance_windows\/{id}": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "Get a maintenance window",
+                "description": "Get an existing maintenance window.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Delete or end a maintenance window",
+                "description": "Delete an existing maintenance window if it's in the future, or end it if it's currently on-going. If the maintenance window has already ended it cannot be deleted.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "The account has the requested ability."
+                    }
+                }
+            },
+            "put": {
+                "summary": "Update a maintenance window",
+                "description": "Update an existing maintenance window.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/notifications": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "List notifications",
+                "description": "List notifications for a given time range, optionally filtered by type (sms_notification, email_notification, phone_notification, or push_notification).",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "since",
+                        "in": "query",
+                        "description": "The start of the date range over which you want to search. The time element is optional."
+                    },
+                    {
+                        "name": "until",
+                        "in": "query",
+                        "description": "The end of the date range over which you want to search. This should be in the same format as since. The size of the date range must be less than 3 months."
+                    },
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "description": "Filters the results, showing only add-ons of the given type"
+                    },
+                    {
+                        "name": "include[]",
+                        "in": "query",
+                        "description": "Array of additional details to include."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/oncalls": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "List all of the on-calls",
+                "description": "List the on-call entries during a given time range.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "include[]",
+                        "in": "query",
+                        "description": "Array of additional details to include."
+                    },
+                    {
+                        "name": "user_ids[]",
+                        "in": "query",
+                        "description": "Filters the results, showing only escalation policies on which any of the users is a target."
+                    },
+                    {
+                        "name": "escalation_policy_ids[]",
+                        "in": "query",
+                        "description": "Filters the results, showing only on-calls for the specified escalation policy IDs."
+                    },
+                    {
+                        "name": "schedule_ids[]",
+                        "in": "query",
+                        "description": "Filters the results, showing only on-calls for the specified schedule IDs. If `null` is provided in the array, it includes permanent on-calls due to direct user escalation targets."
+                    },
+                    {
+                        "name": "since",
+                        "in": "query",
+                        "description": "The start of the date range over which you want to search. The time element is optional."
+                    },
+                    {
+                        "name": "until",
+                        "in": "query",
+                        "description": "The end of the date range over which you want to search. This should be in the same format as since. The size of the date range must be less than 3 months."
+                    },
+                    {
+                        "name": "earliest",
+                        "in": "query",
+                        "description": "This will filter on-calls such that only the earliest on-call for each combination of escalation policy, escalation level, and user is returned. This is useful for determining when the \"next\" on-calls are for a given set of filters."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/schedules": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "List schedules",
+                "description": "List the on-call schedules.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "query",
+                        "in": "query",
+                        "description": "Filters the results, showing only the escalation policies whose names contain the query."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "post": {
+                "summary": "Create a schedule",
+                "description": "Create a new on-call schedule.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "The add-on that was installed."
+                    }
+                }
+            }
+        },
+        "\/schedules\/preview": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Preview a schedule",
+                "description": "Preview what an on-call schedule would look like without saving it.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/schedules\/{id}": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "Get a schedule",
+                "description": "Show detailed information about a schedule, including entries for each layer and sub-schedule.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Delete a schedule",
+                "description": "Delete an on-call schedule.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "The account has the requested ability."
+                    }
+                }
+            },
+            "put": {
+                "summary": "Update a schedule",
+                "description": "Update an existing on-call schedule.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/schedules\/{id}\/overrides": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "List overrides",
+                "description": "List overrides for a given time range.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "since",
+                        "in": "query",
+                        "description": "The start of the date range over which you want to search. The time element is optional."
+                    },
+                    {
+                        "name": "until",
+                        "in": "query",
+                        "description": "The end of the date range over which you want to search. This should be in the same format as since. The size of the date range must be less than 3 months."
+                    },
+                    {
+                        "name": "editable",
+                        "in": "query",
+                        "description": "When this parameter is present, only editable overrides will be returned. The result will only include the id of the override if this parameter is present. Only future overrides are editable."
+                    },
+                    {
+                        "name": "overflow",
+                        "in": "query",
+                        "description": "Any on-call schedule entries that pass the date range bounds will be truncated at the bounds, unless the parameter overflow=true is passed. This parameter defaults to false."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "post": {
+                "summary": "Create an override",
+                "description": "Create an override for a specific user covering the specified time range. If you create an override on top of an existing one, the last created override will have priority.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "The add-on that was installed."
+                    }
+                }
+            }
+        },
+        "\/schedules\/{id}\/overrides\/{override_id}": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "delete": {
+                "summary": "Delete an override",
+                "description": "Remove an override. You cannot remove a past override. If the override start time is before the current time, but the end time is after the current time, the override will be truncated to the current time. If the override is truncated, the status code will be 200 OK, as opposed to a 204 No Content for a successful delete.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/schedules\/{id}\/users": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "List users on call",
+                "description": "List all of the users on call in a given schedule for a given time range.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/services": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "List services",
+                "description": "List existing services.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "query",
+                        "in": "query",
+                        "description": "Filters the results, showing only the escalation policies whose names contain the query."
+                    },
+                    {
+                        "name": "include[]",
+                        "in": "query",
+                        "description": "Array of additional details to include."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "post": {
+                "summary": "Create a service",
+                "description": "Create a new service.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "201": {
+                        "description": "The add-on that was installed."
+                    }
+                }
+            }
+        },
+        "\/services\/{id}": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "Get a service",
+                "description": "Get details about an existing service.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "include[]",
+                        "in": "query",
+                        "description": "Array of additional details to include."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Delete a service",
+                "description": "Delete an existing service. Once the service is deleted, it will not be accessible from the web UI and new incidents won't be able to be created for this service.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "The account has the requested ability."
+                    }
+                }
+            },
+            "put": {
+                "summary": "Update a service",
+                "description": "Update an existing service.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/services\/{id}\/integrations": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Create a new integration",
+                "description": "Create a new integration belonging to a service.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "The add-on that was installed."
+                    }
+                }
+            }
+        },
+        "\/services\/{id}\/integrations\/{integration_id}": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "put": {
+                "summary": "Update an existing integration",
+                "description": "Update an integration belonging to a service.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "get": {
+                "summary": "View an integration",
+                "description": "Get details about an integration belonging to a service.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "include[]",
+                        "in": "query",
+                        "description": "Array of additional details to include."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/services\/{id}\/integrations\/{integration_id}\/regenerate_key": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/teams": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Create a team",
+                "description": "Create a new team.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "201": {
+                        "description": "The add-on that was installed."
+                    }
+                }
+            },
+            "get": {
+                "summary": "List teams",
+                "description": "List teams of your PagerDuty account, optionally filtered by a search query.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "query",
+                        "in": "query",
+                        "description": "Filters the results, showing only the escalation policies whose names contain the query."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/teams\/{id}": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "Get a team",
+                "description": "Get details about an existing team.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Delete a team",
+                "description": "Remove an existing team.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "The account has the requested ability."
+                    }
+                }
+            },
+            "put": {
+                "summary": "Update a team",
+                "description": "Update an existing team.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/teams\/{id}\/escalation_policies\/{escalation_policy_id}": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "delete": {
+                "summary": "Remove an escalation policy from a team",
+                "description": "Remove an escalation policy from a team.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "The account has the requested ability."
+                    }
+                }
+            },
+            "put": {
+                "summary": "Add an escalation policy to a team",
+                "description": "Add an escalation policy to a team.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "The account has the requested ability."
+                    }
+                }
+            }
+        },
+        "\/teams\/{id}\/users\/{user_id}": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "delete": {
+                "summary": "Remove a user from a team",
+                "description": "Remove a user from a team.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "The account has the requested ability."
+                    }
+                }
+            },
+            "put": {
+                "summary": "Add a user to a team",
+                "description": "Add a user to a team. Attempting to add a user with the `read_only_user` role will return a 400 error.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "The account has the requested ability."
+                    }
+                }
+            }
+        },
+        "\/users": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "List users",
+                "description": "List users of your PagerDuty account, optionally filtered by a search query.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "query",
+                        "in": "query",
+                        "description": "Filters the results, showing only the escalation policies whose names contain the query."
+                    },
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "post": {
+                "summary": "Create a user",
+                "description": "Create a new user. Note that you must also supply a `password` property to create a user--it will not be returned by any API.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "The add-on that was installed."
+                    }
+                }
+            }
+        },
+        "\/users\/{id}": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "Get a user",
+                "description": "Get details about an existing user.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Delete a user",
+                "description": "Remove an existing user.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "The account has the requested ability."
+                    }
+                }
+            },
+            "put": {
+                "summary": "Update a user",
+                "description": "Update an existing user. Note that you may also supply a `password` property--it will not be returned by any API.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/users\/me": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/users\/{id}\/roles": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/users\/{id}\/resend_invite": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/users\/{id}\/contact_methods": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "List a user's contact methods",
+                "description": "List contact methods of your PagerDuty user.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "post": {
+                "summary": "Create a user contact method",
+                "description": "Create a new contact method.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "The add-on that was installed."
+                    }
+                }
+            }
+        },
+        "\/users\/{id}\/contact_methods\/{contact_method_id}": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "Get a user's contact method",
+                "description": "Get details about a user's contact method.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Delete a user's contact method",
+                "description": "Remove a user's contact method.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "The account has the requested ability."
+                    }
+                }
+            },
+            "put": {
+                "summary": "Update a user's contact method",
+                "description": "Update a user's contact method.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/users\/{id}\/notification_rules": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "List a user's notification rules",
+                "description": "List notification rules of your PagerDuty user.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "include[]",
+                        "in": "query",
+                        "description": "Array of additional details to include."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "post": {
+                "summary": "Create a user notification rule",
+                "description": "Create a new notification rule.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "The add-on that was installed."
+                    }
+                }
+            }
+        },
+        "\/users\/{id}\/notification_rules\/{notification_rule_id}": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "Get a user's notification rule",
+                "description": "Get details about a user's notification rule.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "include[]",
+                        "in": "query",
+                        "description": "Array of additional details to include."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Delete a user's notification rule",
+                "description": "Remove a user's notification rule.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "The account has the requested ability."
+                    }
+                }
+            },
+            "put": {
+                "summary": "Update a user's notification rule",
+                "description": "Update a user's notification rule.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/vendors": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "List vendors",
+                "description": "List all vendors.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/vendors\/{id}": {
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "Get a vendor",
+                "description": "Get details about one specific vendor.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "AddonReference": {
+                "type": "object"
+            },
+            "Addon": {
+                "type": "object"
+            },
+            "IncidentAddon": {
+                "type": "object"
+            },
+            "IncidentUrgencyType": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "The type of incident urgency: whether it's constant, or it's dependent on the support hours.",
+                        "type": "string"
+                    },
+                    "urgency": {
+                        "description": "The incidents' urgency, if type is constant.",
+                        "type": "string"
+                    }
+                }
+            },
+            "IncidentUrgencyRule": {
+                "type": "object"
+            },
+            "SupportHours": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "The type of incident urgency: whether it's constant, or it's dependent on the support hours.",
+                        "type": "string"
+                    },
+                    "time_zone": {
+                        "description": "The time zone for the support hours",
+                        "type": "string"
+                    },
+                    "days_of_week": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "start_time": {
+                        "description": "The support hours' starting time of day (date portion is ignored)",
+                        "type": "string"
+                    },
+                    "end_time": {
+                        "description": "The support hours' ending time of day (date portion is ignored)",
+                        "type": "string"
+                    }
+                }
+            },
+            "days_of_week": {
+                "type": "array"
+            },
+            "Reference": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "summary": {
+                        "description": "A short-form, server-generated string that provides succinct, important information about an object suitable for primary labeling of an entity in a client. In many cases, this will be identical to `name`, though it is not intended to be an identifier.",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "The type of incident urgency: whether it's constant, or it's dependent on the support hours.",
+                        "type": "string"
+                    },
+                    "self": {
+                        "description": "the API show URL at which the object is accessible",
+                        "type": "string"
+                    },
+                    "html_url": {
+                        "description": "a URL at which the entity is uniquely displayed in the Web app",
+                        "type": "string"
+                    }
+                }
+            },
+            "IncidentNote": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "user": {
+                        "description": "The user who submitted the note",
+                        "type": ""
+                    },
+                    "content": {
+                        "description": "The note content",
+                        "type": "string"
+                    },
+                    "created_at": {
+                        "description": "The time at which the note was submitted",
+                        "type": "string"
+                    }
+                }
+            },
+            "user": {
+                "type": "object"
+            },
+            "Notification": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "The type of incident urgency: whether it's constant, or it's dependent on the support hours.",
+                        "type": "string"
+                    },
+                    "started_at": {
+                        "description": "The time at which the notification was sent",
+                        "type": "string"
+                    },
+                    "address": {
+                        "description": "The address where the notification was sent. This will be null for notification type `push_notification`.",
+                        "type": "string"
+                    },
+                    "user": {
+                        "description": "The user who submitted the note",
+                        "type": ""
+                    }
+                }
+            },
+            "Context": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "The type of incident urgency: whether it's constant, or it's dependent on the support hours.",
+                        "type": "string"
+                    },
+                    "href": {
+                        "description": "The link's target url",
+                        "type": "string"
+                    },
+                    "src": {
+                        "description": "The image's source url",
+                        "type": "string"
+                    },
+                    "text": {
+                        "description": "The alternate display for an image",
+                        "type": "string"
+                    }
+                }
+            },
+            "LinkContext": {
+                "type": "object"
+            },
+            "ImageContext": {
+                "type": "object"
+            },
+            "Channel": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "The type of incident urgency: whether it's constant, or it's dependent on the support hours.",
+                        "type": "string"
+                    },
+                    "user": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "team": {
+                        "description": "team",
+                        "type": "object"
+                    },
+                    "Channel": {
+                        "description": "Polymorphic object representation of the means by which the action was channeled. Has different formats depending on type, indicated by channel[type]. Will be one of `auto`, `email`, `api`, `nagios`, or `timeout` if `agent[type]` is `service`. Will be one of `email`, `sms`, `website`, `web_trigger`, or `note` if `agent[type]` is `user`. See [below](https:\/\/developer.pagerduty.com\/documentation\/rest\/log_entries\/show#channel_types) for detailed information about channel formats.",
+                        "type": "object"
+                    }
+                }
+            },
+            "team": {
+                "type": "object"
+            },
+            "TriggerLogEntry": {
+                "type": "object"
+            },
+            "TriggerLogEntryReference": {
+                "type": "object"
+            },
+            "UnacknowledgeLogEntry": {
+                "type": "object"
+            },
+            "UnacknowledgeLogEntryReference": {
+                "type": "object"
+            },
+            "ResolveLogEntry": {
+                "type": "object"
+            },
+            "ResolveLogEntryReference": {
+                "type": "object"
+            },
+            "AnnotateLogEntry": {
+                "type": "object"
+            },
+            "AnnotateLogEntryReference": {
+                "type": "object"
+            },
+            "ReachTriggerLimitLogEntry": {
+                "type": "object"
+            },
+            "ReachTriggerLimitLogEntryReference": {
+                "type": "object"
+            },
+            "RepeatEscalationPathLogEntry": {
+                "type": "object"
+            },
+            "RepeatEscalationPathLogEntryReference": {
+                "type": "object"
+            },
+            "ExhaustEscalationPathLogEntry": {
+                "type": "object"
+            },
+            "ExhaustEscalationPathLogEntryReference": {
+                "type": "object"
+            },
+            "NotifyLogEntryReference": {
+                "type": "object"
+            },
+            "NotifyLogEntry": {
+                "type": "object"
+            },
+            "AcknowledgeLogEntry": {
+                "type": "object"
+            },
+            "AcknowledgeLogEntryReference": {
+                "type": "object"
+            },
+            "ScheduledAction": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "The type of incident urgency: whether it's constant, or it's dependent on the support hours.",
+                        "type": "string"
+                    },
+                    "at": {
+                        "description": "Represents when scheduled action will occur.",
+                        "type": "object"
+                    },
+                    "to_urgency": {
+                        "description": "Urgency level. Must be set to high.",
+                        "type": "string"
+                    }
+                }
+            },
+            "at": {
+                "type": "object"
+            },
+            "SnoozeLogEntry": {
+                "type": "object"
+            },
+            "SnoozeLogEntryReference": {
+                "type": "object"
+            },
+            "IncidentAction": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "The type of incident urgency: whether it's constant, or it's dependent on the support hours.",
+                        "type": "string"
+                    },
+                    "at": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "UrgencyChangeIncidentAction": {
+                "type": "object"
+            },
+            "AssignLogEntry": {
+                "type": "object"
+            },
+            "AssignLogEntryReference": {
+                "type": "object"
+            },
+            "EscalateLogEntry": {
+                "type": "object"
+            },
+            "EscalateLogEntryReference": {
+                "type": "object"
+            },
+            "LogEntryReference": {
+                "type": "object"
+            },
+            "LogEntry": {
+                "type": "object"
+            },
+            "Agent": {
+                "type": "object"
+            },
+            "NotificationRuleReference": {
+                "type": "object"
+            },
+            "NotificationRule": {
+                "type": "object"
+            },
+            "ContactMethodReference": {
+                "type": "object"
+            },
+            "ContactMethod": {
+                "type": "object"
+            },
+            "EmailContactMethod": {
+                "type": "object"
+            },
+            "PhoneContactMethod": {
+                "type": "object"
+            },
+            "PushContactMethodSound": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "The type of incident urgency: whether it's constant, or it's dependent on the support hours.",
+                        "type": "string"
+                    },
+                    "file": {
+                        "description": "The sound file name.",
+                        "type": "string"
+                    }
+                }
+            },
+            "PushContactMethod": {
+                "type": "object"
+            },
+            "UserRole": {
+                "type": "object",
+                "properties": {
+                    "role": {
+                        "description": "The user's role for a set of resources.\n",
+                        "type": "string"
+                    },
+                    "resources": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "resources": {
+                "type": "array"
+            },
+            "UserReference": {
+                "type": "object"
+            },
+            "TeamReference": {
+                "type": "object"
+            },
+            "IncidentReference": {
+                "type": "object"
+            },
+            "Incident": {
+                "type": "object"
+            },
+            "EscalationPolicyReference": {
+                "type": "object"
+            },
+            "EscalationPolicy": {
+                "type": "object"
+            },
+            "EscalationRule": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "escalation_delay_in_minutes": {
+                        "description": "The number of minutes before an unacknowledged incident escalates away from this rule.",
+                        "type": "integer"
+                    },
+                    "targets": {
+                        "description": "The targets an incident should be assigned to upon reaching this rule.",
+                        "type": "array"
+                    }
+                }
+            },
+            "targets": {
+                "type": "array"
+            },
+            "EscalationTarget": {
+                "type": "object"
+            },
+            "ExtensionReference": {
+                "type": "object"
+            },
+            "Extension": {
+                "type": "object"
+            },
+            "GenericEventsApiIntegration": {
+                "type": "object"
+            },
+            "GenericEventsApiIntegrationReference": {
+                "type": "object"
+            },
+            "AwsCloudwatchIntegration": {
+                "type": "object"
+            },
+            "AwsCloudwatchIntegrationReference": {
+                "type": "object"
+            },
+            "EventTransformerApiIntegration": {
+                "type": "object"
+            },
+            "EventTransformerApiIntegrationReference": {
+                "type": "object"
+            },
+            "NagiosIntegration": {
+                "type": "object"
+            },
+            "NagiosIntegrationReference": {
+                "type": "object"
+            },
+            "GenericEmailIntegration": {
+                "type": "object"
+            },
+            "GenericEmailIntegrationReference": {
+                "type": "object"
+            },
+            "KeynoteIntegration": {
+                "type": "object"
+            },
+            "KeynoteIntegrationReference": {
+                "type": "object"
+            },
+            "PingdomIntegration": {
+                "type": "object"
+            },
+            "PingdomIntegrationReference": {
+                "type": "object"
+            },
+            "HpSiteScopeIntegration": {
+                "type": "object"
+            },
+            "HpSiteScopeIntegrationReference": {
+                "type": "object"
+            },
+            "SqlMonitorIntegration": {
+                "type": "object"
+            },
+            "SqlMonitorIntegrationReference": {
+                "type": "object"
+            },
+            "ApiBasedIntegration": {
+                "type": "object"
+            },
+            "EmailBasedIntegration": {
+                "type": "object"
+            },
+            "ServiceReference": {
+                "type": "object"
+            },
+            "Service": {
+                "type": "object"
+            },
+            "PriorityReference": {
+                "type": "object"
+            },
+            "Priority": {
+                "type": "object"
+            },
+            "Integration": {
+                "type": "object"
+            },
+            "IntegrationReference": {
+                "type": "object"
+            },
+            "MaintenanceWindowReference": {
+                "type": "object"
+            },
+            "MaintenanceWindow": {
+                "type": "object"
+            },
+            "ScheduleReference": {
+                "type": "object"
+            },
+            "Schedule": {
+                "type": "object"
+            },
+            "SubSchedule": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "The name of the subschedule",
+                        "type": "string"
+                    },
+                    "rendered_schedule_entries": {
+                        "description": "This is a list of entries on the computed layer for the current time range. Since or until must be set in order for this field to be populated.",
+                        "type": "array"
+                    },
+                    "rendered_coverage_percentage": {
+                        "description": "The percentage of the time range covered by this layer. Returns null unless since or until are set.",
+                        "type": "number"
+                    }
+                }
+            },
+            "rendered_schedule_entries": {
+                "type": "array"
+            },
+            "ScheduleLayer": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "start": {
+                        "description": "The start time of this layer.",
+                        "type": "string"
+                    },
+                    "end": {
+                        "description": "The end time of this layer. If `null`, the layer does not end.",
+                        "type": "string"
+                    },
+                    "users": {
+                        "description": "The ordered list of users on this layer. The position of the user on the list determines their order in the layer.",
+                        "type": "array"
+                    },
+                    "restrictions": {
+                        "description": "An array of restrictions for the layer. A restriction is a limit on which period of the day or week the schedule layer can accept assignments.",
+                        "type": "array"
+                    },
+                    "rotation_virtual_start": {
+                        "description": "The effective start time of the layer. This can be before the start time of the schedule.",
+                        "type": "string"
+                    },
+                    "rotation_turn_length_seconds": {
+                        "description": "The duration of each on-call shift in seconds.",
+                        "type": "integer"
+                    },
+                    "name": {
+                        "description": "The name of the subschedule",
+                        "type": "string"
+                    },
+                    "rendered_schedule_entries": {
+                        "description": "This is a list of entries on the computed layer for the current time range. Since or until must be set in order for this field to be populated.",
+                        "type": "array"
+                    },
+                    "rendered_coverage_percentage": {
+                        "description": "The percentage of the time range covered by this layer. Returns null unless since or until are set.",
+                        "type": "number"
+                    }
+                }
+            },
+            "users": {
+                "type": "array"
+            },
+            "restrictions": {
+                "type": "array"
+            },
+            "ScheduleLayerEntry": {
+                "type": "object",
+                "properties": {
+                    "UserReference": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "user": {
+                        "description": "The user who submitted the note",
+                        "type": ""
+                    },
+                    "start": {
+                        "description": "The start time of this layer.",
+                        "type": "string"
+                    },
+                    "end": {
+                        "description": "The end time of this layer. If `null`, the layer does not end.",
+                        "type": "string"
+                    }
+                }
+            },
+            "ScheduleLayerUser": {
+                "type": "object",
+                "properties": {
+                    "UserReference": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "user": {
+                        "description": "The user who submitted the note",
+                        "type": ""
+                    }
+                }
+            },
+            "Override": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "start": {
+                        "description": "The start time of this layer.",
+                        "type": "string"
+                    },
+                    "end": {
+                        "description": "The end time of this layer. If `null`, the layer does not end.",
+                        "type": "string"
+                    },
+                    "UserReference": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "user": {
+                        "description": "The user who submitted the note",
+                        "type": ""
+                    }
+                }
+            },
+            "Restriction": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "The type of incident urgency: whether it's constant, or it's dependent on the support hours.",
+                        "type": "string"
+                    },
+                    "duration_seconds": {
+                        "description": "The duration of the restriction in seconds.",
+                        "type": "integer"
+                    },
+                    "start_time_of_day": {
+                        "description": "The start time in HH:mm:ss format.",
+                        "type": "string"
+                    },
+                    "start_day_of_week": {
+                        "description": "Only required for use with a `weekly_restriction` restriction type. The first day of the weekly rotation schedule as [ISO 8601 day](https:\/\/en.wikipedia.org\/wiki\/ISO_week_date) (1 is Monday, etc.)",
+                        "type": "integer"
+                    }
+                }
+            },
+            "WeeklyRestriction": {
+                "type": "object"
+            },
+            "Pagination": {
+                "type": "object",
+                "properties": {
+                    "offset": {
+                        "description": "Echoes offset pagination property.",
+                        "type": "integer"
+                    },
+                    "limit": {
+                        "description": "Echoes limit pagination property.",
+                        "type": "integer"
+                    },
+                    "more": {
+                        "description": "Indicates if there are additional records to return",
+                        "type": "boolean"
+                    },
+                    "total": {
+                        "description": "The total number of records matching the given query.",
+                        "type": "integer"
+                    }
+                }
+            },
+            "Error": {
+                "type": "object",
+                "properties": {
+                    "error": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "error": {
+                "type": "object"
+            },
+            "ErrorObject": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "message": {
+                        "description": "Error message string",
+                        "type": "string"
+                    },
+                    "errors": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "errors": {
+                "type": "array"
+            },
+            "Assignment": {
+                "type": "object",
+                "properties": {
+                    "at": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "UserReference": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "assignee": {
+                        "description": "User that was assigned.",
+                        "type": ""
+                    }
+                }
+            },
+            "Acknowledgement": {
+                "type": "object",
+                "properties": {
+                    "at": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "acknowledger": {
+                        "description": "User or service that acknowledged.",
+                        "type": ""
+                    }
+                }
+            },
+            "acknowledger": {
+                "type": "object"
+            },
+            "Oncall": {
+                "type": "object",
+                "properties": {
+                    "EscalationPolicyReference": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "escalation_policy": {
+                        "description": "The escalation policy for the on-call.",
+                        "type": ""
+                    },
+                    "UserReference": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "user": {
+                        "description": "The user who submitted the note",
+                        "type": ""
+                    },
+                    "ScheduleReference": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "schedule": {
+                        "description": "The schedule for the on-call.",
+                        "type": ""
+                    },
+                    "escalation_level": {
+                        "description": "The escalation level for the on-call.",
+                        "type": "integer"
+                    },
+                    "start": {
+                        "description": "The start time of this layer.",
+                        "type": "string"
+                    },
+                    "end": {
+                        "description": "The end time of this layer. If `null`, the layer does not end.",
+                        "type": "string"
+                    }
+                }
+            },
+            "VendorReference": {
+                "type": "object"
+            },
+            "Vendor": {
+                "type": "object"
+            },
+            "ExtensionSchemaReference": {
+                "type": "object"
+            },
+            "ExtensionSchema": {
+                "type": "object"
+            },
+            "ResolveReason": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "The type of incident urgency: whether it's constant, or it's dependent on the support hours.",
+                        "type": "string"
+                    },
+                    "IncidentReference": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "incident": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "Alert": {
+                "type": "object"
+            },
+            "AlertReference": {
+                "type": "object"
+            },
+            "AlertCount": {
+                "type": "object",
+                "properties": {
+                    "triggered": {
+                        "description": "The count of triggered alerts",
+                        "type": "integer"
+                    },
+                    "resolved": {
+                        "description": "The count of resolved alerts",
+                        "type": "integer"
+                    },
+                    "all": {
+                        "description": "The total count of alerts",
+                        "type": "integer"
+                    }
+                }
+            },
+            "IncidentBody": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "The type of incident urgency: whether it's constant, or it's dependent on the support hours.",
+                        "type": "string"
+                    },
+                    "details": {
+                        "description": "Additional incident details.",
+                        "type": "string"
+                    }
+                }
+            },
+            "StatusUpdate": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "Error message string",
+                        "type": "string"
+                    },
+                    "created_at": {
+                        "description": "The time at which the note was submitted",
+                        "type": "string"
+                    },
+                    "UserReference": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "sender": {
+                        "description": "The user that posted the status update.",
+                        "type": ""
+                    }
+                }
+            },
+            "ResponderRequest": {
+                "type": "object",
+                "properties": {
+                    "IncidentReference": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "incident": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "UserReference": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "requester": {
+                        "description": "The user that posted the responder request",
+                        "type": ""
+                    },
+                    "requested_at": {
+                        "description": "The time the request was made",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "Error message string",
+                        "type": "string"
+                    },
+                    "responder_request_targets": {
+                        "description": "The array of targets the responder request is being sent to",
+                        "type": "array"
+                    }
+                }
+            },
+            "responder_request_targets": {
+                "type": "array"
+            },
+            "ResponderRequestTargetReference": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "The type of incident urgency: whether it's constant, or it's dependent on the support hours.",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "summary": {
+                        "description": "A short-form, server-generated string that provides succinct, important information about an object suitable for primary labeling of an entity in a client. In many cases, this will be identical to `name`, though it is not intended to be an identifier.",
+                        "type": "string"
+                    },
+                    "incident_responders": {
+                        "description": "An array of responders associated with the specified incident",
+                        "type": "array"
+                    }
+                }
+            },
+            "incident_responders": {
+                "type": "array"
+            },
+            "IncidentsRespondersReference": {
+                "type": "object",
+                "properties": {
+                    "state": {
+                        "description": "The status of the responder being added to the incident",
+                        "type": "string"
+                    },
+                    "UserReference": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "user": {
+                        "description": "The user who submitted the note",
+                        "type": ""
+                    },
+                    "IncidentReference": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "incident": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "updated_at": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "Error message string",
+                        "type": "string"
+                    },
+                    "requester": {
+                        "description": "The user that posted the responder request",
+                        "type": ""
+                    },
+                    "requested_at": {
+                        "description": "The time the request was made",
+                        "type": "string"
+                    }
+                }
+            },
+            "service_ids[]": {
+                "type": "array"
+            },
+            "user_ids[]": {
+                "type": "array"
+            },
+            "include[]": {
+                "type": "array"
+            },
+            "statuses[]": {
+                "type": "array"
+            },
+            "sort_by": {
+                "type": "array"
+            },
+            "escalation_policy_ids[]": {
+                "type": "array"
+            },
+            "schedule_ids[]": {
+                "type": "array"
+            }
+        }
+    }
+}
