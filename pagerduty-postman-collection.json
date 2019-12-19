@@ -1,0 +1,2585 @@
+{
+    "id": "53603dc19c2ae9d351a7b93ff18e36c8",
+    "name": "PagerDuty",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "ac0b4fdcf02eb1f9e748de1f9ff5ee6a",
+            "name": "Teams Resource",
+            "url": "https\/teams\/{teamId}\/people",
+            "description": "List people and integrations associated with a given team.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "teamId",
+                    "description": "Unique identifier for team",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "0db4213fdcd601fefd548990bbeb0f1b",
+            "name": "Users {user_guid}",
+            "url": "https\/users\/{user_guid} ",
+            "description": "Returns customer's user by user GUID.\t\t\t",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": " GET ",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "df135e20eb109e4cbc4756cdbaa407d7",
+            "name": "Users {user_guid}",
+            "url": "https\/users\/{user_guid} ",
+            "description": "DELETE users user gu",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": " DELETE ",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "4bb8b9153eb69ddd6ccd51b064615666",
+            "name": "Users",
+            "url": "https\/users ",
+            "description": "Returns all customer's users.\t\t\t",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": " GET ",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "72698477c2b933966b60744b4b97bbd4",
+            "name": "Users",
+            "url": "https\/users ",
+            "description": "Creates a new user.\t\t\t",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": " POST ",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "b04c4f373d4e5f431b9aa937fa5220aa",
+            "name": "Users",
+            "url": "https\/users ",
+            "description": "Updates a user.\t\t\t",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": " PUT ",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "c35b70427cdd24285fa8ca23b2449743",
+            "name": "List users",
+            "url": "https\/users ",
+            "description": "List users of your PagerDuty account, optionally filtered by a search query.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "query",
+                    "description": "Filters the results, showing only the escalation policies whose names contain the query.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "1a58f727e0ece2d6f4cb414df4150182",
+            "name": "Create a user",
+            "url": "https\/users ",
+            "description": "Create a new user. Note that you must also supply a `password` property to create a user--it will not be returned by any API.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "user",
+                    "description": "The user to be created.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "99a925606eabce7e41e486c89f95a7e0",
+            "name": "REST API Reference",
+            "url": "https\/api_reference",
+            "description": "REST API Reference.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "9866d7c7b5ffa39b3fb3b0cdee6e975c",
+            "name": "List abilities",
+            "url": "https\/abilities",
+            "description": "List all of your account's abilities, by name.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "bb136a5752332de3c9db1585efab7646",
+            "name": "Test an ability",
+            "url": "https\/abilities\/{id}",
+            "description": "Test whether your account has a given ability.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "91a7dab23e05d02819acf4b954d3ea17",
+            "name": "List installed add-ons",
+            "url": "https\/addons",
+            "description": "List all of the add-ons installed on your account.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "service_ids[]",
+                    "description": "Filters the results, showing only add-ons for the given services",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "filter",
+                    "description": "Filters the results, showing only add-ons of the given type",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "f6f1400060db01a882d57504c2b3ae56",
+            "name": "Install an add-on",
+            "url": "https\/addons",
+            "description": "Install an add-on for your account.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "addon",
+                    "description": "The add-on to be installed.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "f439fc1cd554f906271841c0e15945e8",
+            "name": "Get an add-on",
+            "url": "https\/addons\/{id}",
+            "description": "Get details about an existing add-on.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "24343a93b5df7c4de76b3a056578029a",
+            "name": "Delete an add-on",
+            "url": "https\/addons\/{id}",
+            "description": "Remove an existing add-on.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "2c86a3274bb407eb530667a1b8f09854",
+            "name": "Update an add-on",
+            "url": "https\/addons\/{id}",
+            "description": "Update an existing add-on.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "addon",
+                    "description": "The add-on to be installed.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "ca6aca5090a29e9618f3dbab61bac363",
+            "name": "List escalation policies",
+            "url": "https\/escalation_policies",
+            "description": "List all of the existing escalation policies.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "query",
+                    "description": "Filters the results, showing only the escalation policies whose names contain the query.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "user_ids[]",
+                    "description": "Filters the results, showing only escalation policies on which any of the users is a target.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "f9d54a76b5876cd9b7d3c2e75f1ee089",
+            "name": "Create an escalation policy",
+            "url": "https\/escalation_policies",
+            "description": "Creates a new escalation policy. There must be at least one existing escalation rule added to create a new escalation policy.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "escalation_policy",
+                    "description": "The escalation policy to be created.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "a5e2142df1f32d6747403c96fd0a5d7d",
+            "name": "Get an escalation policy",
+            "url": "https\/escalation_policies\/{id}",
+            "description": "Get information about an existing escalation policy and its rules.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "ec347476ffd25f5631a175d191a842da",
+            "name": "Delete an escalation policy",
+            "url": "https\/escalation_policies\/{id}",
+            "description": "Deletes an existing escalation policy and rules. The escalation policy must not be in use by any services.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "9512e3f4ce07e616da5044a9746c04dd",
+            "name": "Update an escalation policy",
+            "url": "https\/escalation_policies\/{id}",
+            "description": "Updates an existing escalation policy and rules.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "escalation_policy",
+                    "description": "The escalation policy to be created.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "8e921a6bb0d20642aff1857dfc8d2776",
+            "name": "List incidents",
+            "url": "https\/incidents",
+            "description": "List existing incidents.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "statuses[]",
+                    "description": "Return only incidents with the given statuses. (More status codes may be introduced in the future.)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort_by",
+                    "description": "Used to specify both the field you wish to sort the results on (incident_number\/created_on\/resolved_on\/urgency), as well as the direction (asc\/desc) of the results. The sort_by field and direction should be separated by a colon. A maximum of two fields can be included, separated by a comma. Sort direction defaults to ascending. The account must have the `urgencies` ability to sort by the urgency.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "include[]",
+                    "description": "Array of additional details to include.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "d337e99b2a8a1acafd8cb7f3d85f9910",
+            "name": "Manage incidents",
+            "url": "https\/incidents",
+            "description": "Acknowledge, resolve, escalate or reassign one or more incidents.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "payload",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "a743f08a9eb09bff75937c85dc2930bc",
+            "name": "Get an incident",
+            "url": "https\/incidents\/{id}",
+            "description": "Show detailed information about an incident. Accepts either an incident id, or an incident number.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "Either the id or number of the incident to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "3abb6864c104e439745042d7becc7e6e",
+            "name": "Update an incident",
+            "url": "https\/incidents\/{id}",
+            "description": "Acknowledge, resolve, escalate or reassign an incident.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "Either the id or number of the incident to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "payload",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "0dc73c2fd7db7184958090587c23da53",
+            "name": "List log entries for the incident",
+            "url": "https\/incidents\/{id}\/log_entries",
+            "description": "List log entries for the specified incident.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "08776628633b8542eca58730e341cee9",
+            "name": "List existing notes for the specified incident",
+            "url": "https\/incidents\/{id}\/notes",
+            "description": "List existing notes for the specified incident.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "8507eab19cabd63751daf933cf263753",
+            "name": "Create a new note for the specified incident",
+            "url": "https\/incidents\/{id}\/notes",
+            "description": "Create a new note for the specified incident.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "payload",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "603966d60ed0cf5c996a08893ed160d8",
+            "name": "Snooze an incident",
+            "url": "https\/incidents\/{id}\/snooze",
+            "description": "Post incents  snooze",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "payload",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "5462c158cd8245ef7b3e7f5cb9404e1c",
+            "name": "List log entries",
+            "url": "https\/log_entries",
+            "description": "List all of the incident log entries across the entire account.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "17b1fae37aa4dfdbac91b8efd07bfbf5",
+            "name": "Get a log entry",
+            "url": "https\/log_entries\/{id}",
+            "description": "Get details for a specific incident log entry. This method provides additional information you can use to get at raw event data.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "03a1eef6c5b5bcdada53237dd4eb9d8f",
+            "name": "List maintenance windows",
+            "url": "https\/maintenance_windows",
+            "description": "List existing maintenance windows, optionally filtered by service and\/or team, or whether they are from the past, present or future.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "filter",
+                    "description": "Filters the results, showing only add-ons of the given type",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "query",
+                    "description": "Filters the results, showing only the escalation policies whose names contain the query.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "00dcd13d191c8f88fcac51da5dc0f193",
+            "name": "Create a maintenance window",
+            "url": "https\/maintenance_windows",
+            "description": "Create a new maintenance window for the specified services. No new incidents will be created for a service that is in maintenance.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "maintenance_window",
+                    "description": "The maintenance window object.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "1560689bd205e26f847839ec39914af5",
+            "name": "Get a maintenance window",
+            "url": "https\/maintenance_windows\/{id}",
+            "description": "Get an existing maintenance window.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "28c89992fd8d418fe37d656228330b79",
+            "name": "Delete or end a maintenance window",
+            "url": "https\/maintenance_windows\/{id}",
+            "description": "Delete an existing maintenance window if it's in the future, or end it if it's currently on-going. If the maintenance window has already ended it cannot be deleted.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "1268225e09f8f23f42ee219223607892",
+            "name": "Update a maintenance window",
+            "url": "https\/maintenance_windows\/{id}",
+            "description": "Update an existing maintenance window.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "maintenance_window",
+                    "description": "The maintenance window object.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "ff969597c441ff8bd49ecfd3c7dfa74d",
+            "name": "List notifications",
+            "url": "https\/notifications",
+            "description": "List notifications for a given time range, optionally filtered by type (sms_notification, email_notification, phone_notification, or push_notification).",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "since",
+                    "description": "The start of the date range over which you want to search. The time element is optional.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "until",
+                    "description": "The end of the date range over which you want to search. This should be in the same format as since. The size of the date range must be less than 3 months.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "filter",
+                    "description": "Filters the results, showing only add-ons of the given type",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "include[]",
+                    "description": "Array of additional details to include.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "9116d1f3f2bb5ea77862cd5064b8197d",
+            "name": "List all of the on-calls",
+            "url": "https\/oncalls",
+            "description": "List the on-call entries during a given time range.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "include[]",
+                    "description": "Array of additional details to include.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "user_ids[]",
+                    "description": "Filters the results, showing only escalation policies on which any of the users is a target.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "escalation_policy_ids[]",
+                    "description": "Filters the results, showing only on-calls for the specified escalation policy IDs.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "schedule_ids[]",
+                    "description": "Filters the results, showing only on-calls for the specified schedule IDs. If `null` is provided in the array, it includes permanent on-calls due to direct user escalation targets.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "since",
+                    "description": "The start of the date range over which you want to search. The time element is optional.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "until",
+                    "description": "The end of the date range over which you want to search. This should be in the same format as since. The size of the date range must be less than 3 months.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "earliest",
+                    "description": "This will filter on-calls such that only the earliest on-call for each combination of escalation policy, escalation level, and user is returned. This is useful for determining when the \"next\" on-calls are for a given set of filters.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "e1f411a3bb8b6041228cf1ca45c490d9",
+            "name": "List services",
+            "url": "https\/services",
+            "description": "List existing services.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "query",
+                    "description": "Filters the results, showing only the escalation policies whose names contain the query.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "include[]",
+                    "description": "Array of additional details to include.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "05f16201aa8f2aad1a19ccfb2ce942ab",
+            "name": "Create a service",
+            "url": "https\/services",
+            "description": "Create a new service.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "service",
+                    "description": "The service to be created",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "66c838820d5c1ebe77c815db8b0f298c",
+            "name": "Get a service",
+            "url": "https\/services\/{id}",
+            "description": "Get details about an existing service.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "include[]",
+                    "description": "Array of additional details to include.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "3cbad2b707c627c19b59919947c76f31",
+            "name": "Delete a service",
+            "url": "https\/services\/{id}",
+            "description": "Delete an existing service. Once the service is deleted, it will not be accessible from the web UI and new incidents won't be able to be created for this service.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "bbef6e87fd48482ac9c430488015ae68",
+            "name": "Update a service",
+            "url": "https\/services\/{id}",
+            "description": "Update an existing service.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "service",
+                    "description": "The service to be created",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "6ce48cce3f57f318621af20069531ddb",
+            "name": "Create a new integration",
+            "url": "https\/services\/{id}\/integrations",
+            "description": "Create a new integration belonging to a service.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "integration",
+                    "description": "The integration to be created",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "803a70668612e73341fe7d502c26eb8b",
+            "name": "Update an existing integration",
+            "url": "https\/services\/{id}\/integrations\/{integration_id}",
+            "description": "Update an integration belonging to a service.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "integration",
+                    "description": "The integration to be created",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "1951a8b519e7abb78e9d473e6467836f",
+            "name": "View an integration",
+            "url": "https\/services\/{id}\/integrations\/{integration_id}",
+            "description": "Get details about an integration belonging to a service.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "include[]",
+                    "description": "Array of additional details to include.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "39a9ddb6674a7e36f616007067411478",
+            "name": "Create a team",
+            "url": "https\/teams",
+            "description": "Create a new team.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "team",
+                    "description": "The team to be created.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "20326bfd4aeab9976245c8d2c63ada7d",
+            "name": "List teams",
+            "url": "https\/teams",
+            "description": "List teams of your PagerDuty account, optionally filtered by a search query.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "query",
+                    "description": "Filters the results, showing only the escalation policies whose names contain the query.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "928081cf2c0205cce9ad7c37b7806438",
+            "name": "Get a team",
+            "url": "https\/teams\/{id}",
+            "description": "Get details about an existing team.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "efe7cc18d1e215378a43a0868d44441e",
+            "name": "Delete a team",
+            "url": "https\/teams\/{id}",
+            "description": "Remove an existing team.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "3f467b61458a7d1dec69867a6d3ec605",
+            "name": "Update a team",
+            "url": "https\/teams\/{id}",
+            "description": "Update an existing team.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "team",
+                    "description": "The team to be created.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "2fd987172309428aa64a92724dec48f2",
+            "name": "Remove an escalation policy from a team",
+            "url": "https\/teams\/{id}\/escalation_policies\/{escalation_policy_id}",
+            "description": "Delete teams  escalation policies escalation policy",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "6050867783ebaa627d4b6a18f3e674f8",
+            "name": "Add an escalation policy to a team",
+            "url": "https\/teams\/{id}\/escalation_policies\/{escalation_policy_id}",
+            "description": "Put teams  escalation policies escalation policy",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "848d3a83a1db12d658f88b6b918ea43c",
+            "name": "Remove a user from a team",
+            "url": "https\/teams\/{id}\/users\/{user_id}",
+            "description": "Remove a user from a team.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "acd07dc2ed62e86821e16c043a89a0fd",
+            "name": "Add a user to a team",
+            "url": "https\/teams\/{id}\/users\/{user_id}",
+            "description": "Add a user to a team.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "2813a9b2cbe794f08b3720db613f774e",
+            "name": "Get a user",
+            "url": "https\/users\/{id}",
+            "description": "Get details about an existing user.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "2080b9964855aa81d0c15ef285817e81",
+            "name": "Delete a user",
+            "url": "https\/users\/{id}",
+            "description": "Remove an existing user.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "cba99eda41d215178566f5fb18883b89",
+            "name": "Update a user",
+            "url": "https\/users\/{id}",
+            "description": "Update an existing user. Note that you may also supply a `password` property--it will not be returned by any API.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "user",
+                    "description": "The user to be created.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "beca2d0f72d406218b12b3735844fa83",
+            "name": "List a user's contact methods",
+            "url": "https\/users\/{id}\/contact_methods",
+            "description": "List contact methods of your PagerDuty user.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "695c529a9ffeaf21e704b57aa1c6f7e3",
+            "name": "Create a user contact method",
+            "url": "https\/users\/{id}\/contact_methods",
+            "description": "Create a new contact method.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "contact_method",
+                    "description": "The contact method to be created.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "9474837c7d0d4e2cddb17bb20aa7f00e",
+            "name": "Get a user's contact method",
+            "url": "https\/users\/{id}\/contact_methods\/{contact_method_id}",
+            "description": "Get details about a user's contact method.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "b4275b8e04331135fb88f7e86beede03",
+            "name": "Delete a user's contact method",
+            "url": "https\/users\/{id}\/contact_methods\/{contact_method_id}",
+            "description": "Delete users  contact methods contact method",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "4bf28d2e58481d7768c2c37e30976c0e",
+            "name": "Update a user's contact method",
+            "url": "https\/users\/{id}\/contact_methods\/{contact_method_id}",
+            "description": "Put users  contact methods contact method",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "user",
+                    "description": "The user to be created.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "85e96a578f56d6540e7c5d29e317c301",
+            "name": "List a user's notification rules",
+            "url": "https\/users\/{id}\/notification_rules",
+            "description": "List notification rules of your PagerDuty user.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "include[]",
+                    "description": "Array of additional details to include.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "2088660675025192558611817668eef5",
+            "name": "Create a user notification rule",
+            "url": "https\/users\/{id}\/notification_rules",
+            "description": "Create a new notification rule.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "notification_rule",
+                    "description": "The notification rule to be created.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "5fb60cc23dc192ad9d6236b9dee3161e",
+            "name": "Get a user's notification rule",
+            "url": "https\/users\/{id}\/notification_rules\/{notification_rule_id}",
+            "description": "Get users  notification rules notification rule",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "include[]",
+                    "description": "Array of additional details to include.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "3ad1305d71c557394559cbdff38c1d7c",
+            "name": "Delete a user's notification rule",
+            "url": "https\/users\/{id}\/notification_rules\/{notification_rule_id}",
+            "description": "Delete users  notification rules notification rule",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "39c650a8d66284009dc7e963f99a3eb4",
+            "name": "Update a user's notification rule",
+            "url": "https\/users\/{id}\/notification_rules\/{notification_rule_id}",
+            "description": "Put users  notification rules notification rule",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "notification_rule",
+                    "description": "The notification rule to be created.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "0cf57873b909f597cccc5c36f1bf3e26",
+            "name": "List vendors",
+            "url": "https\/vendors",
+            "description": "List all vendors.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "ce24ec6d7f639849b6541ff8bfe5e1df",
+            "name": "Get a vendor",
+            "url": "https\/vendors\/{id}",
+            "description": "Get details about one specific vendor.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "d0712a9f797cc62643e294d30fc6df7a",
+            "name": "Creating a service",
+            "url": "https\/inventory\/services",
+            "description": " inventory services",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "token",
+                    "description": "Your API token.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "The display name for the service.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "checkType",
+                    "description": "The type of check: either http or tcp",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "timeout",
+                    "description": "How many seconds to wait until timing out. Max 30.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "checkUrl",
+                    "description": "HTTP Check - The URL to issue the request to.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "checkLocations",
+                    "description": "A JSON list of locations to check from e.g. [&quot;lon&quot;, &quot;dub&quot;]. Each location has its own ???API ID??? which is noted on the locations list. Location ID&#39;s can be found on our support site",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "checkMethod",
+                    "description": "HTTP Check - The HTTP method used to issue the check: either GET, POST, PUT or DELETE. Required for HTTP check, irrelevant for TCP.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "slowThreshold",
+                    "description": "HTTP Check - Request time millisecond threshold after which service is deemed slow.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "group",
+                    "description": "The group the service belongs to. If this is empty it???s set to null.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "auth",
+                    "description": "Basic HTTP auth username and password. e.g. {&quot;username&quot;:&quot;Thomas&quot;, &quot;password&quot;:&quot;password&quot;}",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "headers",
+                    "description": "HTTP Check - headers to include e.g. {&quot;User-Agent&quot;: &quot;Thomas the Tank Engine&quot;}",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "HTTP Check - Content of the HTTP requestbody",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "validateCert",
+                    "description": "HTTP Check - Whether to validate the SSL certificate or not",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "host",
+                    "description": "TCP Check - The hostname or IP address to issue the TCP check to",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "port",
+                    "description": "TCP Check - The port number to issue the TCP check to",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "data",
+                    "description": "TCP Check - The content to send when opening the TCP socket",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tags",
+                    "description": "A JSON list of tag IDs.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "token",
+                    "description": "Your API token.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "80269d40c25d7277b6c8f132734ec7ce",
+            "name": "Updating a service",
+            "url": "https\/inventory\/services\/serviceId",
+            "description": " inventory services service",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "serviceId",
+                    "description": "The ID of your service.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "token",
+                    "description": "Your API token.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "The display name for the service.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "checkType",
+                    "description": "The type of check: either http or tcp",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "timeout",
+                    "description": "How many seconds to wait until timing out. Max 30.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "checkLocations",
+                    "description": "A JSON list of locations to check from e.g. [&quot;lon&quot;, &quot;dub&quot;]. Each location has its own &quot;API ID&quot; which is noted on the locations list.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "group",
+                    "description": "The group the service belongs to.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "checkUrl",
+                    "description": "HTTP Check - The URL to issue the request to.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "checkMethod",
+                    "description": "HTTP Check - The HTTP method used to issue the check: either GET or POST.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "slowThreshold",
+                    "description": "HTTP Check - Request time millisecond threshold after which service is deemed slow.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "HTTP Check - Content of the HTTP request body",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "host",
+                    "description": "TCP Check - The hostname or IP address to issue the TCP check to",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "port",
+                    "description": "TCP Check - The port number to issue the TCP check to",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "data",
+                    "description": "TCP Check - The content to send when opening the TCP socket",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "validateCert",
+                    "description": "Whether to validate the SSL certificate or not",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "auth",
+                    "description": "Basic HTTP auth username and password. e.g. {&quot;username&quot;:&quot;Thomas&quot;, &quot;password&quot;:&quot;password&quot;}",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "headers",
+                    "description": "HTTP headers to include e.g. {&quot;User-Agent&quot;: &quot;Thomas the Tank Engine&quot;}",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tags",
+                    "description": "A JSON list of tag IDs.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "token",
+                    "description": "Your API token.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "The display name for the service.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "checkType",
+                    "description": "The type of check: either http or tcp",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "timeout",
+                    "description": "How many seconds to wait until timing out. Max 30.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "checkLocations",
+                    "description": "A JSON list of locations to check from e.g. [&quot;lon&quot;, &quot;dub&quot;]. Each location has its own ???API ID??? which is noted on the locations list. Location ID&#39;s can be found on our support site",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "group",
+                    "description": "The group the service belongs to. If this is empty it???s set to null.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "checkUrl",
+                    "description": "HTTP Check - The URL to issue the request to.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "checkMethod",
+                    "description": "HTTP Check - The HTTP method used to issue the check: either GET, POST, PUT or DELETE. Required for HTTP check, irrelevant for TCP.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "slowThreshold",
+                    "description": "HTTP Check - Request time millisecond threshold after which service is deemed slow.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "HTTP Check - Content of the HTTP requestbody",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "host",
+                    "description": "TCP Check - The hostname or IP address to issue the TCP check to",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "port",
+                    "description": "TCP Check - The port number to issue the TCP check to",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "data",
+                    "description": "TCP Check - The content to send when opening the TCP socket",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "validateCert",
+                    "description": "HTTP Check - Whether to validate the SSL certificate or not",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "auth",
+                    "description": "Basic HTTP auth username and password. e.g. {&quot;username&quot;:&quot;Thomas&quot;, &quot;password&quot;:&quot;password&quot;}",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "headers",
+                    "description": "HTTP Check - headers to include e.g. {&quot;User-Agent&quot;: &quot;Thomas the Tank Engine&quot;}",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tags",
+                    "description": "A JSON list of tag IDs.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "c0134f4d05000100c46d3351c65fc31c",
+            "name": "Listing service groups",
+            "url": "https\/inventory\/services\/groups\/?token=token",
+            "description": " inventory services groups token token",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "token",
+                    "description": "Your API token.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "4af0ae5a47585e6b3ffb52e6adc7eb81",
+            "name": "Creating a recipient",
+            "url": "https\/notifications\/recipients",
+            "description": "Create recipients for your alert notifications\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "token",
+                    "description": "Your API token.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "The display name for the service.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "The type of notification integration",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "channel",
+                    "description": "Channel name for chat integrations",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "url",
+                    "description": "URL for webhook integrations",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        },
+        {
+            "id": "55d2733c437662763396231f4f33ee94",
+            "name": "Deleting a user",
+            "url": "https\/users\/users\/userId",
+            "description": " users users user",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "userId",
+                    "description": "The ID of the user to delete",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "token",
+                    "description": "Your API token.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "token",
+                    "description": "Your API token.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "rawModeData": ""
+        }
+    ]
+}
