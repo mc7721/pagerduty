@@ -1,5 +1,5 @@
 {
-    "id": "53603dc19c2ae9d351a7b93ff18e36c8",
+    "id": "e23ea1ef7d497e7afe8309e6693d5f3f",
     "name": "PagerDuty",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "ac0b4fdcf02eb1f9e748de1f9ff5ee6a",
+            "id": "56f5357355188ca182419569cfb1e7ce",
             "name": "Teams Resource",
             "url": "https\/teams\/{teamId}\/people",
             "description": "List people and integrations associated with a given team.",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "0db4213fdcd601fefd548990bbeb0f1b",
+            "id": "92ec5e8d45f18aa7b2b040ab75d5dc31",
             "name": "Users {user_guid}",
             "url": "https\/users\/{user_guid} ",
             "description": "Returns customer's user by user GUID.\t\t\t",
@@ -60,11 +60,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "df135e20eb109e4cbc4756cdbaa407d7",
+            "id": "148c16324a8642b9d508efd888324fbd",
             "name": "Users {user_guid}",
             "url": "https\/users\/{user_guid} ",
             "description": "DELETE users user gu",
@@ -83,11 +83,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "4bb8b9153eb69ddd6ccd51b064615666",
+            "id": "7b4ca150e0b74bdf99d1c421360ab76b",
             "name": "Users",
             "url": "https\/users ",
             "description": "Returns all customer's users.\t\t\t",
@@ -106,11 +106,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "72698477c2b933966b60744b4b97bbd4",
+            "id": "da63a53f1ac0b945008e2313b817f947",
             "name": "Users",
             "url": "https\/users ",
             "description": "Creates a new user.\t\t\t",
@@ -129,11 +129,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "b04c4f373d4e5f431b9aa937fa5220aa",
+            "id": "8c9700981de93124a8aba1638e4b8db2",
             "name": "Users",
             "url": "https\/users ",
             "description": "Updates a user.\t\t\t",
@@ -152,11 +152,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "c35b70427cdd24285fa8ca23b2449743",
+            "id": "bf374e47675ca53b10bfcfc0b247adee",
             "name": "List users",
             "url": "https\/users ",
             "description": "List users of your PagerDuty account, optionally filtered by a search query.",
@@ -183,11 +183,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "1a58f727e0ece2d6f4cb414df4150182",
+            "id": "e0d065eb67fee244ce2309fe9b5fd8cf",
             "name": "Create a user",
             "url": "https\/users ",
             "description": "Create a new user. Note that you must also supply a `password` property to create a user--it will not be returned by any API.",
@@ -214,11 +214,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "99a925606eabce7e41e486c89f95a7e0",
+            "id": "0bd24488b4fd60bd3cf3376be254e79e",
             "name": "REST API Reference",
             "url": "https\/api_reference",
             "description": "REST API Reference.",
@@ -237,11 +237,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "9866d7c7b5ffa39b3fb3b0cdee6e975c",
+            "id": "66580485b7c13bf8539cdca0a13bc4e1",
             "name": "List abilities",
             "url": "https\/abilities",
             "description": "List all of your account's abilities, by name.",
@@ -260,11 +260,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "bb136a5752332de3c9db1585efab7646",
+            "id": "21895f44e09bf31053a9bc3ee876efe8",
             "name": "Test an ability",
             "url": "https\/abilities\/{id}",
             "description": "Test whether your account has a given ability.",
@@ -283,11 +283,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "91a7dab23e05d02819acf4b954d3ea17",
+            "id": "2216ed07cce73be39fa562fc62f0ea2d",
             "name": "List installed add-ons",
             "url": "https\/addons",
             "description": "List all of the add-ons installed on your account.",
@@ -321,11 +321,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "f6f1400060db01a882d57504c2b3ae56",
+            "id": "a4808b749eca9b85f23c9eb82adfbdf8",
             "name": "Install an add-on",
             "url": "https\/addons",
             "description": "Install an add-on for your account.",
@@ -352,11 +352,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "f439fc1cd554f906271841c0e15945e8",
+            "id": "0dd62dfe06c25c288eb75cf99d04040f",
             "name": "Get an add-on",
             "url": "https\/addons\/{id}",
             "description": "Get details about an existing add-on.",
@@ -375,11 +375,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "24343a93b5df7c4de76b3a056578029a",
+            "id": "e971e99d34bb680dacf8bd32840ee518",
             "name": "Delete an add-on",
             "url": "https\/addons\/{id}",
             "description": "Remove an existing add-on.",
@@ -398,11 +398,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "2c86a3274bb407eb530667a1b8f09854",
+            "id": "b7a75b865f875965bde726d8ba769fb0",
             "name": "Update an add-on",
             "url": "https\/addons\/{id}",
             "description": "Update an existing add-on.",
@@ -429,11 +429,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "ca6aca5090a29e9618f3dbab61bac363",
+            "id": "4f013061103762bfa40f11a801dc5ed3",
             "name": "List escalation policies",
             "url": "https\/escalation_policies",
             "description": "List all of the existing escalation policies.",
@@ -467,11 +467,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "f9d54a76b5876cd9b7d3c2e75f1ee089",
+            "id": "7a47095665aba5677ad96bebc5d8c833",
             "name": "Create an escalation policy",
             "url": "https\/escalation_policies",
             "description": "Creates a new escalation policy. There must be at least one existing escalation rule added to create a new escalation policy.",
@@ -498,11 +498,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "a5e2142df1f32d6747403c96fd0a5d7d",
+            "id": "1387ef4348b4a62ba157c20455627a71",
             "name": "Get an escalation policy",
             "url": "https\/escalation_policies\/{id}",
             "description": "Get information about an existing escalation policy and its rules.",
@@ -521,11 +521,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "ec347476ffd25f5631a175d191a842da",
+            "id": "f3a5b7188dc42b6bac81da7e040faa51",
             "name": "Delete an escalation policy",
             "url": "https\/escalation_policies\/{id}",
             "description": "Deletes an existing escalation policy and rules. The escalation policy must not be in use by any services.",
@@ -544,11 +544,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "9512e3f4ce07e616da5044a9746c04dd",
+            "id": "f5fff4f79bc10d38053ce01b735730f1",
             "name": "Update an escalation policy",
             "url": "https\/escalation_policies\/{id}",
             "description": "Updates an existing escalation policy and rules.",
@@ -575,11 +575,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "8e921a6bb0d20642aff1857dfc8d2776",
+            "id": "688f99087359f4f955967f6bf408facf",
             "name": "List incidents",
             "url": "https\/incidents",
             "description": "List existing incidents.",
@@ -620,11 +620,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "d337e99b2a8a1acafd8cb7f3d85f9910",
+            "id": "69170683edd967903aa48af974e32dcf",
             "name": "Manage incidents",
             "url": "https\/incidents",
             "description": "Acknowledge, resolve, escalate or reassign one or more incidents.",
@@ -651,11 +651,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "a743f08a9eb09bff75937c85dc2930bc",
+            "id": "c9d3c0d71720ea8df2b4dc1986eb3e70",
             "name": "Get an incident",
             "url": "https\/incidents\/{id}",
             "description": "Show detailed information about an incident. Accepts either an incident id, or an incident number.",
@@ -682,11 +682,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "3abb6864c104e439745042d7becc7e6e",
+            "id": "3480af83c17acc9c5aea1b1a0cac01ba",
             "name": "Update an incident",
             "url": "https\/incidents\/{id}",
             "description": "Acknowledge, resolve, escalate or reassign an incident.",
@@ -720,11 +720,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "0dc73c2fd7db7184958090587c23da53",
+            "id": "eafe6b3a8d0ac66dbb859da6a8527516",
             "name": "List log entries for the incident",
             "url": "https\/incidents\/{id}\/log_entries",
             "description": "List log entries for the specified incident.",
@@ -743,11 +743,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "08776628633b8542eca58730e341cee9",
+            "id": "4326163393db528f73faf7ee11d3de7e",
             "name": "List existing notes for the specified incident",
             "url": "https\/incidents\/{id}\/notes",
             "description": "List existing notes for the specified incident.",
@@ -766,11 +766,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "8507eab19cabd63751daf933cf263753",
+            "id": "e11396ede4c51f1e6c69b5594f153a15",
             "name": "Create a new note for the specified incident",
             "url": "https\/incidents\/{id}\/notes",
             "description": "Create a new note for the specified incident.",
@@ -797,11 +797,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "603966d60ed0cf5c996a08893ed160d8",
+            "id": "44136b4ea344e376521c7f5e4a7554dc",
             "name": "Snooze an incident",
             "url": "https\/incidents\/{id}\/snooze",
             "description": "Post incents  snooze",
@@ -828,11 +828,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "5462c158cd8245ef7b3e7f5cb9404e1c",
+            "id": "450a3db5084da6185d865b690a3ff531",
             "name": "List log entries",
             "url": "https\/log_entries",
             "description": "List all of the incident log entries across the entire account.",
@@ -851,11 +851,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "17b1fae37aa4dfdbac91b8efd07bfbf5",
+            "id": "f504ed1148e40104711810b197c5dbdd",
             "name": "Get a log entry",
             "url": "https\/log_entries\/{id}",
             "description": "Get details for a specific incident log entry. This method provides additional information you can use to get at raw event data.",
@@ -874,11 +874,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "03a1eef6c5b5bcdada53237dd4eb9d8f",
+            "id": "1e129819462e37a5e7896a644abf6978",
             "name": "List maintenance windows",
             "url": "https\/maintenance_windows",
             "description": "List existing maintenance windows, optionally filtered by service and\/or team, or whether they are from the past, present or future.",
@@ -912,11 +912,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "00dcd13d191c8f88fcac51da5dc0f193",
+            "id": "3ac79a63ba6eb19b742478d1ac3479e7",
             "name": "Create a maintenance window",
             "url": "https\/maintenance_windows",
             "description": "Create a new maintenance window for the specified services. No new incidents will be created for a service that is in maintenance.",
@@ -943,11 +943,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "1560689bd205e26f847839ec39914af5",
+            "id": "2e2cb86873c21a54d0b7bca7fd2d43d4",
             "name": "Get a maintenance window",
             "url": "https\/maintenance_windows\/{id}",
             "description": "Get an existing maintenance window.",
@@ -966,11 +966,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "28c89992fd8d418fe37d656228330b79",
+            "id": "8effc2af55183a3e6bc5903bce18dd1b",
             "name": "Delete or end a maintenance window",
             "url": "https\/maintenance_windows\/{id}",
             "description": "Delete an existing maintenance window if it's in the future, or end it if it's currently on-going. If the maintenance window has already ended it cannot be deleted.",
@@ -989,11 +989,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "1268225e09f8f23f42ee219223607892",
+            "id": "4cf4c66afe9294b8ddd4ec1f2aded8b6",
             "name": "Update a maintenance window",
             "url": "https\/maintenance_windows\/{id}",
             "description": "Update an existing maintenance window.",
@@ -1020,11 +1020,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "ff969597c441ff8bd49ecfd3c7dfa74d",
+            "id": "970812dddbc6a8c3dbdb8a629b321adb",
             "name": "List notifications",
             "url": "https\/notifications",
             "description": "List notifications for a given time range, optionally filtered by type (sms_notification, email_notification, phone_notification, or push_notification).",
@@ -1072,11 +1072,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "9116d1f3f2bb5ea77862cd5064b8197d",
+            "id": "7c97a9549247d6c663168f9504d368c1",
             "name": "List all of the on-calls",
             "url": "https\/oncalls",
             "description": "List the on-call entries during a given time range.",
@@ -1145,11 +1145,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "e1f411a3bb8b6041228cf1ca45c490d9",
+            "id": "376569fc5dcc7414fda8704c918f4d5a",
             "name": "List services",
             "url": "https\/services",
             "description": "List existing services.",
@@ -1183,11 +1183,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "05f16201aa8f2aad1a19ccfb2ce942ab",
+            "id": "8d70f8b81298d91892862c9ace206db3",
             "name": "Create a service",
             "url": "https\/services",
             "description": "Create a new service.",
@@ -1214,11 +1214,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "66c838820d5c1ebe77c815db8b0f298c",
+            "id": "20bcccc11cfc525e6c3ef7431ca70631",
             "name": "Get a service",
             "url": "https\/services\/{id}",
             "description": "Get details about an existing service.",
@@ -1245,11 +1245,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "3cbad2b707c627c19b59919947c76f31",
+            "id": "dbb09a5d98c17363385a116675c177b5",
             "name": "Delete a service",
             "url": "https\/services\/{id}",
             "description": "Delete an existing service. Once the service is deleted, it will not be accessible from the web UI and new incidents won't be able to be created for this service.",
@@ -1268,11 +1268,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "bbef6e87fd48482ac9c430488015ae68",
+            "id": "77563ceb06bd4a43a6faf7da45a12838",
             "name": "Update a service",
             "url": "https\/services\/{id}",
             "description": "Update an existing service.",
@@ -1299,11 +1299,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "6ce48cce3f57f318621af20069531ddb",
+            "id": "2cc28363c887809164d8d623684e5fe4",
             "name": "Create a new integration",
             "url": "https\/services\/{id}\/integrations",
             "description": "Create a new integration belonging to a service.",
@@ -1330,11 +1330,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "803a70668612e73341fe7d502c26eb8b",
+            "id": "ea8f578cc3229e44e5bf96e440fa37f3",
             "name": "Update an existing integration",
             "url": "https\/services\/{id}\/integrations\/{integration_id}",
             "description": "Update an integration belonging to a service.",
@@ -1361,11 +1361,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "1951a8b519e7abb78e9d473e6467836f",
+            "id": "c02e34d713570a6ed86ae06c3975f2a2",
             "name": "View an integration",
             "url": "https\/services\/{id}\/integrations\/{integration_id}",
             "description": "Get details about an integration belonging to a service.",
@@ -1392,11 +1392,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "39a9ddb6674a7e36f616007067411478",
+            "id": "8a42e6f622b13bbd331be7c2c368a451",
             "name": "Create a team",
             "url": "https\/teams",
             "description": "Create a new team.",
@@ -1423,11 +1423,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "20326bfd4aeab9976245c8d2c63ada7d",
+            "id": "b164a4ca57315f749ad579c06894ab53",
             "name": "List teams",
             "url": "https\/teams",
             "description": "List teams of your PagerDuty account, optionally filtered by a search query.",
@@ -1454,11 +1454,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "928081cf2c0205cce9ad7c37b7806438",
+            "id": "bf3ac731e656a185e74dd3f13a5d6ab0",
             "name": "Get a team",
             "url": "https\/teams\/{id}",
             "description": "Get details about an existing team.",
@@ -1477,11 +1477,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "efe7cc18d1e215378a43a0868d44441e",
+            "id": "9d81ba32b74c88231c8c486f548c8b01",
             "name": "Delete a team",
             "url": "https\/teams\/{id}",
             "description": "Remove an existing team.",
@@ -1500,11 +1500,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "3f467b61458a7d1dec69867a6d3ec605",
+            "id": "66a12aa6517e942a042361b742e7c990",
             "name": "Update a team",
             "url": "https\/teams\/{id}",
             "description": "Update an existing team.",
@@ -1531,11 +1531,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "2fd987172309428aa64a92724dec48f2",
+            "id": "f6e934f51ce9acdc631f7f63d24333a5",
             "name": "Remove an escalation policy from a team",
             "url": "https\/teams\/{id}\/escalation_policies\/{escalation_policy_id}",
             "description": "Delete teams  escalation policies escalation policy",
@@ -1554,11 +1554,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "6050867783ebaa627d4b6a18f3e674f8",
+            "id": "6b303c05e99c384bb15923f727b70724",
             "name": "Add an escalation policy to a team",
             "url": "https\/teams\/{id}\/escalation_policies\/{escalation_policy_id}",
             "description": "Put teams  escalation policies escalation policy",
@@ -1577,11 +1577,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "848d3a83a1db12d658f88b6b918ea43c",
+            "id": "0f0e7eb8e2e2feeb0d977f6897f80f0c",
             "name": "Remove a user from a team",
             "url": "https\/teams\/{id}\/users\/{user_id}",
             "description": "Remove a user from a team.",
@@ -1600,11 +1600,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "acd07dc2ed62e86821e16c043a89a0fd",
+            "id": "18633725e86f938c4a29381331535a6a",
             "name": "Add a user to a team",
             "url": "https\/teams\/{id}\/users\/{user_id}",
             "description": "Add a user to a team.",
@@ -1623,11 +1623,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "2813a9b2cbe794f08b3720db613f774e",
+            "id": "aadf75d00ad0bb0ff77effdef5911c01",
             "name": "Get a user",
             "url": "https\/users\/{id}",
             "description": "Get details about an existing user.",
@@ -1646,11 +1646,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "2080b9964855aa81d0c15ef285817e81",
+            "id": "0f8d84dfddc3356fe4e3b1349e138183",
             "name": "Delete a user",
             "url": "https\/users\/{id}",
             "description": "Remove an existing user.",
@@ -1669,11 +1669,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "cba99eda41d215178566f5fb18883b89",
+            "id": "fa17f84c5e6eab41a22c183f0b8be734",
             "name": "Update a user",
             "url": "https\/users\/{id}",
             "description": "Update an existing user. Note that you may also supply a `password` property--it will not be returned by any API.",
@@ -1700,11 +1700,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "beca2d0f72d406218b12b3735844fa83",
+            "id": "c9f80111a5fdc94107f0779ddbb175cc",
             "name": "List a user's contact methods",
             "url": "https\/users\/{id}\/contact_methods",
             "description": "List contact methods of your PagerDuty user.",
@@ -1723,11 +1723,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "695c529a9ffeaf21e704b57aa1c6f7e3",
+            "id": "9fffb2b4556723a6646cdae5d1f75100",
             "name": "Create a user contact method",
             "url": "https\/users\/{id}\/contact_methods",
             "description": "Create a new contact method.",
@@ -1754,11 +1754,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "9474837c7d0d4e2cddb17bb20aa7f00e",
+            "id": "901944ebe8f849562fe1a029bcc4c212",
             "name": "Get a user's contact method",
             "url": "https\/users\/{id}\/contact_methods\/{contact_method_id}",
             "description": "Get details about a user's contact method.",
@@ -1777,11 +1777,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "b4275b8e04331135fb88f7e86beede03",
+            "id": "21f84712382b850401bf160131fcc930",
             "name": "Delete a user's contact method",
             "url": "https\/users\/{id}\/contact_methods\/{contact_method_id}",
             "description": "Delete users  contact methods contact method",
@@ -1800,11 +1800,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "4bf28d2e58481d7768c2c37e30976c0e",
+            "id": "9f0d7635842220e78316d46af3171839",
             "name": "Update a user's contact method",
             "url": "https\/users\/{id}\/contact_methods\/{contact_method_id}",
             "description": "Put users  contact methods contact method",
@@ -1831,11 +1831,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "85e96a578f56d6540e7c5d29e317c301",
+            "id": "7c2facb087faf2bff16251e3c60550e9",
             "name": "List a user's notification rules",
             "url": "https\/users\/{id}\/notification_rules",
             "description": "List notification rules of your PagerDuty user.",
@@ -1862,11 +1862,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "2088660675025192558611817668eef5",
+            "id": "e9a57ca621b906ec2d75aeca94fb9be2",
             "name": "Create a user notification rule",
             "url": "https\/users\/{id}\/notification_rules",
             "description": "Create a new notification rule.",
@@ -1893,11 +1893,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "5fb60cc23dc192ad9d6236b9dee3161e",
+            "id": "20db4afd436c4c1339558f24eadd0e92",
             "name": "Get a user's notification rule",
             "url": "https\/users\/{id}\/notification_rules\/{notification_rule_id}",
             "description": "Get users  notification rules notification rule",
@@ -1924,11 +1924,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "3ad1305d71c557394559cbdff38c1d7c",
+            "id": "9e6c5c357139076b747f831ecdc9a4a5",
             "name": "Delete a user's notification rule",
             "url": "https\/users\/{id}\/notification_rules\/{notification_rule_id}",
             "description": "Delete users  notification rules notification rule",
@@ -1947,11 +1947,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "39c650a8d66284009dc7e963f99a3eb4",
+            "id": "e074f8f5d1eec1ef838b7445432d5edb",
             "name": "Update a user's notification rule",
             "url": "https\/users\/{id}\/notification_rules\/{notification_rule_id}",
             "description": "Put users  notification rules notification rule",
@@ -1978,11 +1978,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "0cf57873b909f597cccc5c36f1bf3e26",
+            "id": "c51cefcd262fe7671596e3ce616e6c3f",
             "name": "List vendors",
             "url": "https\/vendors",
             "description": "List all vendors.",
@@ -2001,11 +2001,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "ce24ec6d7f639849b6541ff8bfe5e1df",
+            "id": "d8bccbfb55a82806a3f09f7e6cb97085",
             "name": "Get a vendor",
             "url": "https\/vendors\/{id}",
             "description": "Get details about one specific vendor.",
@@ -2024,11 +2024,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "d0712a9f797cc62643e294d30fc6df7a",
+            "id": "5cab441e09919ce2988f3842bf8ffe87",
             "name": "Creating a service",
             "url": "https\/inventory\/services",
             "description": " inventory services",
@@ -2174,11 +2174,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "80269d40c25d7277b6c8f132734ec7ce",
+            "id": "64dd88ccdac85e181475a1ab17e66457",
             "name": "Updating a service",
             "url": "https\/inventory\/services\/serviceId",
             "description": " inventory services service",
@@ -2443,11 +2443,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "c0134f4d05000100c46d3351c65fc31c",
+            "id": "5249832bc4046fb4c002949395169772",
             "name": "Listing service groups",
             "url": "https\/inventory\/services\/groups\/?token=token",
             "description": " inventory services groups token token",
@@ -2474,11 +2474,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "4af0ae5a47585e6b3ffb52e6adc7eb81",
+            "id": "a4b55e7afe6453af93405bf58a31b2de",
             "name": "Creating a recipient",
             "url": "https\/notifications\/recipients",
             "description": "Create recipients for your alert notifications\n",
@@ -2533,11 +2533,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         },
         {
-            "id": "55d2733c437662763396231f4f33ee94",
+            "id": "23406bfba78901e6e7b25dab0d0caf43",
             "name": "Deleting a user",
             "url": "https\/users\/users\/userId",
             "description": " users users user",
@@ -2578,7 +2578,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "53603dc19c2ae9d351a7b93ff18e36c8",
+            "collectionId": "e23ea1ef7d497e7afe8309e6693d5f3f",
             "rawModeData": ""
         }
     ]
